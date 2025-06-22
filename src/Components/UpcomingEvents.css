@@ -1,0 +1,138 @@
+.upcoming-events {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.upcoming-events h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #333;
+  font-weight: bold;
+}
+
+.events-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.event-card {
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  width: 300px;
+  padding: 20px;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.event-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.event-icon {
+  width: 50px;
+  height: 50px;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.event-content h3 {
+  font-size: 1.4rem;
+  color: #333;
+  margin: 0 0 10px;
+}
+
+.event-content .event-meta {
+  font-size: 0.9rem;
+  color: #133490;
+  margin: 0 0 10px;
+  font-weight: 500;
+}
+
+.event-content .event-description {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Responsive adjustments for tablets (768px and below) */
+@media (max-width: 768px) {
+  .upcoming-events {
+    padding: 40px 15px;
+  }
+
+  .upcoming-events h2 {
+    font-size: 2rem;
+  }
+
+  .event-card {
+    width: 260px;
+    padding: 15px;
+  }
+
+  .event-content h3 {
+    font-size: 1.3rem;
+  }
+
+  .event-content .event-meta {
+    font-size: 0.85rem;
+  }
+
+  .event-content .event-description {
+    font-size: 0.85rem;
+  }
+
+  .event-icon {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+/* Responsive adjustments for mobile (480px and below) */
+@media (max-width: 480px) {
+  .upcoming-events {
+    padding: 30px 10px;
+  }
+
+  .upcoming-events h2 {
+    font-size: 1.8rem;
+  }
+
+  .event-card {
+    width: 100%;
+    max-width: 300px;
+    padding: 12px;
+  }
+
+  .event-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .event-content .event-meta {
+    font-size: 0.8rem;
+  }
+
+  .event-content .event-description {
+    font-size: 0.8rem;
+  }
+
+  .event-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
