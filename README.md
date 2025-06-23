@@ -1,4 +1,4 @@
 # Energy society - IIT Delhi 
 
-This The source code Esoc website.
+This is source code Esoc website.
 
