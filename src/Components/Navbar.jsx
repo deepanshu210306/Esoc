@@ -38,7 +38,7 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${isVisible ? 'visible' : 'hidden'}`}>
       <div className="logo">
-        <img src={logocom} alt="Maitri Global Education Logo" />
+        <img src={logocom} alt="Energy soc Logo" />
       </div>
       <ul className="nav-links">
         <li>Home</li>

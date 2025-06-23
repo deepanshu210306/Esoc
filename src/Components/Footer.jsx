@@ -22,8 +22,10 @@ const Footer = () => {
 
         {/* Center - Address and Phone */}
         <div className="footer-center">
-          <p className="footer-info">Indian Institute of Technology Delhi</p>
-          <p className="footer-info">Hauz Khas, New Delhi - 110016</p>
+          <h3>Address & Contact</h3>
+          <p className="footer-info">Room No.235,Block-5</p>
+          <p className="footer-info">Department of Energy Engineering</p>
+          <p className="footer-info">Indian Institute of Technology Delhi,Hauz Khas, New Delhi-110016</p>
           <p className="footer-info">Phone: +91-9876543210</p>
         </div>
 

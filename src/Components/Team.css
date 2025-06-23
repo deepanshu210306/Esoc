@@ -1,5 +1,5 @@
 .testimonials-section {
-  padding: 60px 20px;
+  padding: 10px 20px;
   text-align: center;
   background-color: #f9f9f9;
 }
@@ -18,7 +18,7 @@
 
 .testimonial-card {
   perspective: 1000px;
-  height: 300px; /* Fixed height for uniformity */
+  height: 250px; /* Fixed height for uniformity */
 }
 
 .card-inner {
@@ -55,8 +55,8 @@
 }
 
 .card-back {
-  background-color: #ff6200;
-  color: #fff;
+  background: linear-gradient(90deg, #0e4fd2 100%, #3f7ad8 0%); 
+  color: #facc15;
   transform: rotateX(180deg);
 }
 
@@ -88,8 +88,9 @@
 }
 
 .card-back p {
-  font-size: 0.9rem;
+  font-size: 1.3rem;
   margin: 0;
+  font-weight: 450;
   line-height: 1.4;
   text-align: center;
   max-height: 80px; /* Limit testimonial text height to prevent overflow */
@@ -101,7 +102,7 @@
 }
 
 .custom-arrow {
-  color: #ff6200;
+  color: #facc15;
   font-size: 1.5rem;
 }
 
