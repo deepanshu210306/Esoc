@@ -1,191 +1,162 @@
-.testimonials-section {
-  padding: 10px 20px;
+/* Main container for the team section */
+.team-section {
+  padding: 4rem 2rem;
   text-align: center;
-  background-color: #f9f9f9;
+  background-color: #f5f5f5; /* Light gray background */
+  position: relative; /* Needed for positioning navigation arrows */
+  overflow: hidden;
 }
 
-.testimonials-section h1 {
-  font-size: 2.5rem;
-  margin-bottom: 40px;
+/* Section heading */
+.team-section h1 {
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
+  margin-bottom: 3rem;
   color: #333;
-  font-weight: bold;
+  font-weight: 800;
 }
 
-.testimonials-swiper {
+/* Swiper container adjustments */
+.team-swiper {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 40px; /* Space for navigation arrows on larger screens */
 }
 
-.testimonial-card {
-  perspective: 1000px;
-  height: 250px; /* Fixed height for uniformity */
+/* Individual team member card */
+.team-card {
+  perspective: 1000px; /* Creates the 3D space for the flip effect */
+  height: 300px; /* Uniform height for all cards */
+  cursor: pointer;
 }
 
 .card-inner {
   position: relative;
   width: 100%;
   height: 100%;
-  transition: transform 0.6s;
+  transition: transform 0.7s;
   transform-style: preserve-3d;
 }
 
-.testimonial-card:hover .card-inner {
-  transition-delay: 0.3s;
-  transform: rotateX(180deg);
+/* Flip the card on hover */
+.team-card:hover .card-inner {
+  transform: rotateY(180deg);
 }
 
+/* Common styles for both front and back of the card */
 .card-front,
 .card-back {
   position: absolute;
   width: 100%;
   height: 100%;
-  backface-visibility: hidden;
+  backface-visibility: hidden; /* Hides the back of the element */
   border-radius: 12px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 20px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  box-sizing: border-box; /* Ensure padding doesn't affect height */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
 }
 
 .card-front {
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .card-back {
-  background: linear-gradient(90deg, #0e4fd2 100%, #3f7ad8 0%); 
-  color: #facc15;
-  transform: rotateX(180deg);
+  background: linear-gradient(45deg, #133490, #296bd6);
+  color: #fbcc0c; /* Accent yellow */
+  transform: rotateY(180deg); /* Initially hide the back */
 }
 
-.testimonial-image {
-  width: 100px;
-  height: 100px;
+/* Team member's image */
+.team-image {
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   margin-bottom: 15px;
   object-fit: cover;
+  border: 4px solid #133490; /* Primary blue border */
 }
 
 .card-front h3 {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   color: #333;
-  margin: 0 0 10px;
+  margin: 0 0 5px;
 }
 
-.testimonial-des {
-  font-size: 0.9rem;
-  color: #666;
+.team-position {
+  font-size: 1rem;
+  color: #133490;
+  font-weight: 500;
   margin: 0;
-  line-height: 1.4;
-  max-height: 40px; /* Limit description height to prevent overflow */
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 2; /* Limit to 2 lines */
-  -webkit-box-orient: vertical;
 }
 
 .card-back p {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   margin: 0;
-  font-weight: 450;
-  line-height: 1.4;
+  font-weight: 400;
+  line-height: 1.6;
   text-align: center;
-  max-height: 80px; /* Limit testimonial text height to prevent overflow */
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 4; /* Limit to 4 lines */
-  -webkit-box-orient: vertical;
 }
 
+/* Custom navigation arrows */
 .custom-arrow {
-  color: #facc15;
-  font-size: 1.5rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  cursor: pointer;
+  color: #133490;
+  transition: color 0.3s ease;
+}
+
+.custom-arrow:hover {
+  color: #fbcc0c;
+}
+
+.swiper-button-prev-custom {
+  left: 15px;
+}
+
+.swiper-button-next-custom {
+  right: 15px;
 }
 
 .custom-arrow::after {
-  font-size: 1.5rem;
+  font-family: 'swiper-icons'; /* Swiper's icon font */
+  font-size: 2rem;
+  font-weight: 800;
 }
 
-/* Responsive adjustments for tablets (768px and below) */
+.swiper-button-prev-custom::after {
+  content: 'prev';
+}
+
+.swiper-button-next-custom::after {
+  content: 'next';
+}
+
+
+/* Responsive adjustments */
 @media (max-width: 768px) {
-  .testimonials-section {
-    padding: 40px 15px;
-  }
-
-  .testimonials-section h1 {
-    font-size: 2rem;
-  }
-
-  .testimonials-swiper {
-    slides-per-view: 2;
-  }
-
-  .testimonial-card {
+  .team-card {
     height: 280px;
   }
-
-  .card-front h3 {
-    font-size: 1.2rem;
-  }
-
-  .testimonial-des {
-    font-size: 0.85rem;
-    max-height: 38px;
-  }
-
-  .card-back p {
-    font-size: 0.85rem;
-    max-height: 76px;
-  }
-
-  .testimonial-image {
-    width: 90px;
-    height: 90px;
+  .team-image {
+    width: 100px;
+    height: 100px;
   }
 }
 
-/* Responsive adjustments for mobile (480px and below) */
 @media (max-width: 480px) {
-  .testimonials-section {
-    padding: 30px 10px;
+  .team-section {
+    padding: 3rem 1rem;
   }
-
-  .testimonials-section h1 {
-    font-size: 1.8rem;
+  .team-swiper {
+    padding: 0; /* No space for arrows on mobile */
   }
-
-  .testimonials-swiper {
-    slides-per-view: 1;
-  }
-
-  .testimonial-card {
-    height: 260px;
-  }
-
-  .card-front h3 {
-    font-size: 1.1rem;
-  }
-
-  .testimonial-des {
-    font-size: 0.8rem;
-    max-height: 36px;
-  }
-
-  .card-back p {
-    font-size: 0.8rem;
-    max-height: 72px;
-  }
-
-  .testimonial-image {
-    width: 80px;
-    height: 80px;
-  }
-
-  .custom-arrow::after {
-    font-size: 1.2rem;
+  .custom-arrow {
+    display: none; /* Hide arrows on small screens */
   }
 }

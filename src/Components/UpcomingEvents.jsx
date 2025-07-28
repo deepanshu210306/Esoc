@@ -2,29 +2,23 @@ import React from 'react';
 import './UpcomingEvents.css';
 import logocom from './logo.svg';
 
-
 const UpcomingEvents = () => {
   const events = [
     {
-      title: 'Freshers Orientation ',
+      title: 'Freshers Orientation',
       date: 'September 1, 2025',
       location: 'LH 111, IIT Delhi',
-      description: 'The First session for freshers is here !!.',
+      description: 'The first session for all incoming freshers is here! Come and learn about the society.',
       link: '#',
+      icon: logocom
     },
     // {
-    //   title: 'A B C ',
-    //   date: 'August 1, 2025',
-    //   location: 'LH 111, IIT Delhi',
-    //   description: 'Join us to explore study opportunities and meet university representatives.',
+    //   title: 'Another Event',
+    //   date: 'October 15, 2025',
+    //   location: 'Online',
+    //   description: 'Join us for our next big event. More details to follow soon.',
     //   link: '#',
-    // },
-    // {
-    //   title: 'A B C ',
-    //   date: 'August 1, 2025',
-    //   location: 'LH 111, IIT Delhi',
-    //   description: 'Join us to explore study opportunities and meet university representatives.',
-    //   link: '#',
+    //   icon: logocom
     // },
   ];
 
@@ -33,16 +27,13 @@ const UpcomingEvents = () => {
       <h2>Upcoming Events</h2>
       <div className="events-container">
         {events.map((event, index) => (
-          <a href={event.link} key={index} class="event-card">
-  <img src={logocom} alt="Event Logo" class="event-icon" />
-  
-  <div class="event-content">
-    <h3>Freshers Orientation</h3>
-    <div class="event-meta">September 1, 2025| LH 111, IIT Delhi</div>
-    <p class="event-description">
-     The First session for freshers is here !!!
-    </p>
-  </div>
+          <a href={event.link} key={index} className="event-card">
+            <img src={event.icon} alt={`${event.title} Logo`} className="event-icon" />
+            <div className="event-content">
+              <h3>{event.title}</h3>
+              <div className="event-meta">{`${event.date} | ${event.location}`}</div>
+              <p className="event-description">{event.description}</p>
+            </div>
           </a>
         ))}
       </div>

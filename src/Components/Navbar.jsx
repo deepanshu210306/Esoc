@@ -20,8 +20,8 @@ const Navbar = () => {
     };
 
     const handleMouseMove = (e) => {
-      if (e.clientY < 50) {
-        // Show navbar if cursor is within 50px from the top
+      if (e.clientY < 60) {
+        // Show navbar if cursor is within 60px from the top
         setIsVisible(true);
       }
     };
@@ -35,11 +35,17 @@ const Navbar = () => {
     };
   }, [lastScrollY]);
 
+  // Hamburger menu state and toggle function have been removed.
+
   return (
     <nav className={`navbar ${isVisible ? 'visible' : 'hidden'}`}>
       <div className="logo">
-        <img src={logocom} alt="Energy soc Logo" />
+        <a href="#home">
+          <img src={logocom} alt="Energy Soc Logo" />
+        </a>
       </div>
+      
+      {/* The nav links are now always visible */}
       <ul className="nav-links">
         <li>Home</li>
         <li>About</li>
