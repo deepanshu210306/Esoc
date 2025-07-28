@@ -1,7 +1,10 @@
 import React from 'react';
 import './footer.css';
 import logo from './logo.svg';
-import phoneIcon from './icon.svg'; // Replace with appropriate icons
+import linkedinIcon from './linkedin.svg'; // Replace with appropriate icons
+import instagramIcon from './instagram.svg'; // Replace with appropriate icons
+import youtubeIcon from './youtube.svg'; // Replace with appropriate icons
+import IITDlogo from './IITDelhi.svg'; // Replace with appropriate icons
 
 
 const Footer = () => {
@@ -11,7 +14,7 @@ const Footer = () => {
         {/* Left - Two Logos Horizontally */}
         <div className="footer-left">
           <div className="logo-with-text">
-            <img src={logo} alt="Energy Society Logo 1" className="footer-logo" />
+            <img src={IITDlogo} alt="IITD logo" className="footer-logo" />
             <p className="footer-title">IIT Delhi</p>
           </div>
           <div className="logo-with-text">
@@ -22,7 +25,7 @@ const Footer = () => {
 
         {/* Center - Address and Phone */}
         <div className="footer-center">
-          <h3>Address & Contact</h3>
+          <h3>Address & Contact :</h3>
           <p className="footer-info">Room No.235,Block-5</p>
           <p className="footer-info">Department of Energy Engineering</p>
           <p className="footer-info">Indian Institute of Technology Delhi,Hauz Khas, New Delhi-110016</p>
@@ -33,14 +36,14 @@ const Footer = () => {
         <div className="footer-right">
           <h4 className="social-heading">Connect With Us</h4>
           <div className="social-icons">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-              <img src={phoneIcon} alt="Facebook" className="social-img" />
+            <a href="https://www.linkedin.com/company/energyiitd/" target="_blank" rel="noopener noreferrer">
+              <img src={linkedinIcon} alt="Facebook" className="social-img" />
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-              <img src={phoneIcon} alt="Twitter" className="social-img" />
+            <a href="www.youtube.com/@energyiitd" target="_blank" rel="noopener noreferrer">
+              <img src={instagramIcon} alt="Twitter" className="social-img" />
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-              <img src={phoneIcon} alt="Instagram" className="social-img" />
+            <a href="https://www.instagram.com/energy_iitd/" target="_blank" rel="noopener noreferrer">
+              <img src={youtubeIcon} alt="Instagram" className="social-img" />
             </a>
           </div>
         </div>
