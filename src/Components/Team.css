@@ -1,162 +1,129 @@
-/* Main container for the team section */
-.team-section {
-  padding: 4rem 2rem;
-  text-align: center;
-  background-color: #f5f5f5; /* Light gray background */
-  position: relative; /* Needed for positioning navigation arrows */
-  overflow: hidden;
+/* Main container for the entire team page */
+.team-page {
+  padding: 8rem 0 4rem; /* Padding to account for navbar and give space */
+  background-color: var(--background-white);
+  min-height: 100vh;
 }
 
-/* Section heading */
-.team-section h1 {
-  font-size: clamp(1.8rem, 5vw, 2.5rem);
-  margin-bottom: 3rem;
-  color: #333;
+.team-page-title {
+  font-size: clamp(2rem, 6vw, 3rem);
   font-weight: 800;
+  text-align: center;
+  margin-bottom: 4rem;
+  color: var(--dark-gray);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
-/* Swiper container adjustments */
-.team-swiper {
-  max-width: 1200px;
+/* Styling for each top-level category section */
+.team-category {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.team-category-title {
+  font-size: clamp(1.5rem, 4vw, 2.2rem);
+  font-weight: 700;
+  color: var(--primary-blue);
+  margin-bottom: 2.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid var(--accent-yellow);
+  display: inline-block;
+}
+
+/* Styling for the vertical sections container */
+.vertical-section {
+  margin-bottom: 4rem;
+  padding: 2rem;
+  background-color: var(--light-gray);
+  border-radius: 16px; /* Rounded corners for the section */
+}
+
+.vertical-title {
+  font-size: clamp(1.4rem, 4vw, 1.8rem);
+  font-weight: 700;
+  color: var(--dark-gray);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.vertical-subsection {
+  margin-bottom: 2rem;
+}
+
+.vertical-subsection h4 {
+  font-size: 1.2rem;
+  color: var(--primary-blue);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Responsive grid for the cards */
+.team-grid {
+  display: grid;
+  /* Updated minmax to allow for 4 columns on larger screens */
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+}
+
+/* Special grid for single-card sections like Faculty Coordinator */
+.single-card-grid {
+  max-width: 300px;
   margin: 0 auto;
-  padding: 0 40px; /* Space for navigation arrows on larger screens */
 }
 
-/* Individual team member card */
-.team-card {
-  perspective: 1000px; /* Creates the 3D space for the flip effect */
-  height: 300px; /* Uniform height for all cards */
-  cursor: pointer;
-}
-
-.card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  transition: transform 0.7s;
-  transform-style: preserve-3d;
-}
-
-/* Flip the card on hover */
-.team-card:hover .card-inner {
-  transform: rotateY(180deg);
-}
-
-/* Common styles for both front and back of the card */
-.card-front,
-.card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden; /* Hides the back of the element */
-  border-radius: 12px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  box-sizing: border-box;
-}
-
-.card-front {
+/* Static Team Card Styling (No Flip) */
+.team-card-static {
   background-color: #ffffff;
+  border-radius: 16px; /* More prominent border-radius */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.05); /* Enhanced shadow effect */
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card-back {
-  background: linear-gradient(45deg, #133490, #296bd6);
-  color: #fbcc0c; /* Accent yellow */
-  transform: rotateY(180deg); /* Initially hide the back */
+.team-card-static:hover {
+  transform: translateY(-8px); /* More noticeable lift on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 12px 24px rgba(0, 0, 0, 0.1); /* Deeper shadow on hover */
 }
 
-/* Team member's image */
 .team-image {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  margin-bottom: 15px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Perfect circle */
   object-fit: cover;
-  border: 4px solid #133490; /* Primary blue border */
+  border: 5px solid var(--primary-blue);
+  margin: 0 auto 1rem auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for the image itself */
 }
 
-.card-front h3 {
+.team-name {
   font-size: 1.4rem;
-  color: #333;
-  margin: 0 0 5px;
+  font-weight: 700;
+  color: var(--dark-gray);
+  margin: 0;
 }
 
 .team-position {
   font-size: 1rem;
-  color: #133490;
+  color: var(--primary-blue);
   font-weight: 500;
-  margin: 0;
+  margin-top: 0.25rem;
 }
-
-.card-back p {
-  font-size: 1.1rem;
-  margin: 0;
-  font-weight: 400;
-  line-height: 1.6;
-  text-align: center;
-}
-
-/* Custom navigation arrows */
-.custom-arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10;
-  cursor: pointer;
-  color: #133490;
-  transition: color 0.3s ease;
-}
-
-.custom-arrow:hover {
-  color: #fbcc0c;
-}
-
-.swiper-button-prev-custom {
-  left: 15px;
-}
-
-.swiper-button-next-custom {
-  right: 15px;
-}
-
-.custom-arrow::after {
-  font-family: 'swiper-icons'; /* Swiper's icon font */
-  font-size: 2rem;
-  font-weight: 800;
-}
-
-.swiper-button-prev-custom::after {
-  content: 'prev';
-}
-
-.swiper-button-next-custom::after {
-  content: 'next';
-}
-
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .team-card {
-    height: 280px;
-  }
-  .team-image {
-    width: 100px;
-    height: 100px;
+  .team-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
   }
 }
 
 @media (max-width: 480px) {
-  .team-section {
-    padding: 3rem 1rem;
+  .team-grid {
+    grid-template-columns: 1fr; /* Stack cards on very small screens */
   }
-  .team-swiper {
-    padding: 0; /* No space for arrows on mobile */
-  }
-  .custom-arrow {
-    display: none; /* Hide arrows on small screens */
+  .team-image {
+    width: 120px;
+    height: 120px;
   }
 }

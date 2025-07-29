@@ -25,7 +25,7 @@ const Footer = () => {
 
         {/* Center - Address and Contact */}
         <div className="footer-center">
-          <h3>Address & Contact</h3>
+          <h3 style={{"color":"white"}}>Address & Contact</h3>
           <p className="footer-info">Room No. 235, Block-5</p>
           <p className="footer-info">Department of Energy Engineering</p>
           <p className="footer-info">Indian Institute of Technology Delhi, Hauz Khas, New Delhi-110016</p>
@@ -50,8 +50,8 @@ const Footer = () => {
       </div>
 
       {/* Bottom Footer Line */}
-      <div className="footer-bottom">
-        <p>Made with ❤️ by Deepanshu</p>
+      <div className="footer-bottom" >
+        <p> Made with ❤️ by Deepanshu</p>
         <p>© 2025 Energy Society, IIT Delhi. All Rights Reserved.</p>
       </div>
     </footer>

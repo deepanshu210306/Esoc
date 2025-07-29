@@ -55,9 +55,10 @@
 }
 
 .footer-center {
-  flex: 1.2 ;
+  flex: 1.2;
   min-width: 250px;
   text-align: center;
+  padding-top: 40px;
 }
 
 .footer-info {
@@ -72,6 +73,8 @@
   flex: 1;
   min-width: 220px;
   text-align: center;
+  padding-top: 40px;
+
 }
 
 .social-heading {
@@ -112,6 +115,7 @@
 }
 
 .footer-bottom p {
+  color: aliceblue;
   margin: 4px 0;
 }
 
