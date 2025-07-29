@@ -7,9 +7,10 @@
 
 .team-page-title {
   font-size: clamp(2rem, 6vw, 3rem);
+  padding-top: 100px;
+  padding-bottom: 30px;
   font-weight: 800;
   text-align: center;
-  margin-bottom: 4rem;
   color: var(--dark-gray);
 }
 
@@ -147,6 +148,13 @@
   }
   .team-grid {
     gap: 1.5rem;
+  }
+  
+  /* THIS IS THE FIX: Make executive cards wrap on smaller screens */
+  .executive-row {
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-x: hidden;
   }
 }
 
