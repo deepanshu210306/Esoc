@@ -1,4 +1,4 @@
-import Index from './pages/index'
+import Index from './pages/Index'
 import { createBrowserRouter, RouterProvider,BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import Team from './Components/Team';
