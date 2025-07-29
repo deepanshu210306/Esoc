@@ -23,5 +23,5 @@ dist-ssr
 *.sln
 *.sw?
 
-src/Components/header_clip.mp4
+# src/Components/header_clip.mp4
 node_modules/
