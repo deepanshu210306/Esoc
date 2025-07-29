@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import './Team.css';
-import team from "../../Data.json"
 
 const TeamCard = ({ image, name, position }) => (
   <div className="team-card-static">
@@ -35,21 +34,21 @@ const VerticalSection = ({ title, coordinators, executives }) => (
 );
 
 const Team = () => {
-  const [teamData, setTeamData] = useState(team);
+  const [teamData, setTeamData] = useState(null);
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch('/data.json')
+    fetch('/team/Data.json')
       .then((response) => {
         if (!response.ok) {
-          throw new Error('Network response was not ok');
+          throw new Error('Failed to fetch team data');
         }
         return response.json();
       })
       .then((data) => setTeamData(data))
-      .catch((error) => {
-        console.error("Failed to fetch team data:", error);
-        setError(error);
+      .catch((err) => {
+        console.error("Error loading team data:", err);
+        setError(err);
       });
   }, []);
 
@@ -85,7 +84,7 @@ const Team = () => {
             </div>
           </div>
         )}
-        
+
         {teamData.verticals && (
           <>
             <VerticalSection title="Design & Operations" {...teamData.verticals.designOps} />
