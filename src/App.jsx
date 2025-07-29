@@ -1,21 +1,16 @@
-import Navbar from './Components/Navbar';
-import Footer from './Components/Footer';
-import Hero from './Components/Hero';
-import Prof from './Components/Kaushik_sir';
-import FAQSection from './Components/FAQSection';
-import UpcomingEvents from './Components/UpcomingEvents';
+import Index from './pages/index'
+import { createBrowserRouter, RouterProvider,BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import HomePage from './pages/HomePage';
 import Team from './Components/Team';
 function App() {
+
   return (
-    <>
-      <Navbar />
-      <Hero />
-      <Prof />
-      <UpcomingEvents/>
-      <Team/>
-      <FAQSection />
-      <Footer />
-    </>
+    <Routes >
+      <Route path='/' element={<Index />}>
+       <Route path='/' element={<HomePage />} />
+       <Route path='/team' element={<Team />} />
+      </Route>
+    </Routes>
   );
 }
 

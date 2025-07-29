@@ -1,0 +1,74 @@
+{
+  "facultyCoordinator": {
+    "name": "Prof. Kaushik Saha",
+    "position": "Faculty Coordinator",
+    "image": "/team/dummy.jpg"
+  },
+  "panelMembers": [
+    {
+      "name": "Deepanshu",
+      "position": "Overall Coordinator",
+      "image": "/team/dummy.jpg"
+    },
+    {
+      "name": "Panel Member 1",
+      "position": "Panel Member",
+      "image": "/team/dummy.jpg"
+    },
+    {
+      "name": "Panel Member 2",
+      "position": "Panel Member",
+      "image": "/team/dummy.jpg"
+    }
+  ],
+  "verticals": {
+    "designOps": {
+      "coordinators": [
+        { "name": "Coordinator A", "position": "Coordinator", "image": "/team/dummy.jpg" },
+        { "name": "Coordinator B", "position": "Coordinator", "image": "/team/dummy.jpg" }
+      ],
+      "executives": [
+        { "name": "Executive", "position": "Executive", "image": "/team/dummy.jpg" },
+        { "name": "Executive", "position": "Executive", "image": "/team/dummy.jpg" },
+        { "name": "Executive", "position": "Executive", "image": "/team/dummy.jpg" },
+        { "name": "Executive", "position": "Executive", "image": "/team/dummy.jpg" }
+      ]
+    },
+    "outreachMarketing": {
+      "coordinators": [
+        { "name": "Coordinator C", "position": "Coordinator", "image": "/team/dummy.jpg" },
+        { "name": "Coordinator D", "position": "Coordinator", "image": "/team/dummy.jpg" }
+      ],
+      "executives": [
+        { "name": "Executive", "position": "Executive", "image": "/team/dummy.jpg" },
+        { "name": "Executive", "position": "Executive", "image": "/team/dummy.jpg" },
+        { "name": "Executive", "position": "Executive", "image": "/team/dummy.jpg" },
+        { "name": "Executive", "position": "Executive", "image": "/team/dummy.jpg" }
+      ]
+    },
+    "events": {
+      "coordinators": [
+        { "name": "Coordinator E", "position": "Coordinator", "image": "/team/dummy.jpg" },
+        { "name": "Coordinator F", "position": "Coordinator", "image": "/team/dummy.jpg" }
+      ],
+      "executives": [
+        { "name": "Executive", "position": "Executive", "image": "/team/dummy.jpg" },
+        { "name": "Executive", "position": "Executive", "image": "/team/dummy.jpg" },
+        { "name": "Executive", "position": "Executive", "image": "/team/dummy.jpg" },
+        { "name": "Executive", "position": "Executive", "image": "/team/dummy.jpg" }
+      ]
+    },
+    "adminFinance": {
+      "coordinators": [
+        { "name": "Coordinator G", "position": "Coordinator", "image": "/team/dummy.jpg" },
+        { "name": "Coordinator H", "position": "Coordinator", "image": "/team/dummy.jpg" }
+      ],
+      "executives": [
+        { "name": "Executive", "position": "Executive", "image": "/team/dummy.jpg" },
+        { "name": "Executive", "position": "Executive", "image": "/team/dummy.jpg" },
+        { "name": "Executive", "position": "Executive", "image": "/team/dummy.jpg" },
+        { "name": "Executive", "position": "Executive", "image": "/team/dummy.jpg" }
+      ]
+    }
+  }
+}

@@ -1,10 +1,16 @@
 import { useEffect, useState } from 'react';
 import './Navbar.css';
 import logocom from './logo.svg';
+import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
+
+  const navigate = useNavigate();
+
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -40,17 +46,17 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${isVisible ? 'visible' : 'hidden'}`}>
       <div className="logo">
-        <a href="#home">
+        <Link to="/  ">
           <img src={logocom} alt="Energy Soc Logo" />
-        </a>
+        </Link>
       </div>
       
       {/* The nav links are now always visible */}
       <ul className="nav-links">
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
-        <li>More</li>
+        <li onClick={()=>{navigate("/")}}>Home</li>
+        <li onClick={()=>{navigate("/team")}}>Team</li>
+        <li >Contact</li>
+        <li>FAQs</li>
       </ul>
     </nav>
   );
