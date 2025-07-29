@@ -1,6 +1,6 @@
 /* Main container for the entire team page */
 .team-page {
-  padding: 8rem 0 4rem; /* Padding to account for navbar and give space */
+  padding:  25px;
   background-color: var(--background-white);
   min-height: 100vh;
 }
@@ -11,7 +11,6 @@
   text-align: center;
   margin-bottom: 4rem;
   color: var(--dark-gray);
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 /* Styling for each top-level category section */
@@ -33,9 +32,10 @@
 /* Styling for the vertical sections container */
 .vertical-section {
   margin-bottom: 4rem;
+  width: 100%;
   padding: 2rem;
   background-color: var(--light-gray);
-  border-radius: 16px; /* Rounded corners for the section */
+  border-radius: 16px;
 }
 
 .vertical-title {
@@ -57,43 +57,46 @@
   text-align: center;
 }
 
-/* Responsive grid for the cards */
+/* Responsive grid for the cards - using Flexbox for centering */
 .team-grid {
-  display: grid;
-  /* Updated minmax to allow for 4 columns on larger screens */
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* This centers the items horizontally */
   gap: 2rem;
 }
 
-/* Special grid for single-card sections like Faculty Coordinator */
 .single-card-grid {
   max-width: 300px;
   margin: 0 auto;
 }
 
-/* Static Team Card Styling (No Flip) */
+/* Updated Static Team Card Styling */
 .team-card-static {
+  width: 250px; /* Fixed width for all cards */
   background-color: #ffffff;
-  border-radius: 16px; /* More prominent border-radius */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.05); /* Enhanced shadow effect */
-  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden; /* Crucial for clipping the image corners */
+  display: flex;
+  flex-direction: column;
 }
 
 .team-card-static:hover {
-  transform: translateY(-8px); /* More noticeable lift on hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 12px 24px rgba(0, 0, 0, 0.1); /* Deeper shadow on hover */
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
 }
 
 .team-image {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%; /* Perfect circle */
-  object-fit: cover;
-  border: 5px solid var(--primary-blue);
-  margin: 0 auto 1rem auto;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for the image itself */
+  width: 100%; /* Image takes full width of the card */
+  height: 220px; /* Fixed height for the image area */
+  object-fit: cover; /* Ensures image covers the area without distortion */
+}
+
+/* Container for the text content below the image */
+.team-card-content {
+  padding: 1.5rem;
 }
 
 .team-name {
@@ -110,20 +113,49 @@
   margin-top: 0.25rem;
 }
 
+/* Loading/Error Message Styling */
+.team-page-message {
+    text-align: center;
+    padding: 10rem 2rem;
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+.executive-row {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  justify-content: flex-start;
+  gap: 2rem;
+  padding-bottom: 1rem;
+}
+
+.executive-row::-webkit-scrollbar {
+  display: none;
+}
+
+.executive-row {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
+  .team-card-static {
+    width: 220px; /* Slightly smaller cards for tablets */
+  }
   .team-grid {
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 1.5rem;
   }
 }
 
 @media (max-width: 480px) {
-  .team-grid {
-    grid-template-columns: 1fr; /* Stack cards on very small screens */
+  .team-card-static {
+    width: 100%; /* Full width cards on mobile */
+    max-width: 300px; /* But not too wide */
   }
   .team-image {
-    width: 120px;
-    height: 120px;
+    height: 180px; /* Adjust image height for smaller cards */
   }
 }
