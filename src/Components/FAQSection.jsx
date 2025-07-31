@@ -6,19 +6,19 @@ const FAQSection = () => {
   const faqs = [
     {
       question: 'question',
-      answer: 'Nhi bataunga',
+      answer: 'Ans',
     },
     {
      question: 'question',
-      answer: 'Nhi bataunga',
+      answer: 'Ans',
     },
     {
       question: 'question',
-      answer: 'Nhi bataunga',
+      answer: 'Ans',
     },
     {
       question: 'question',
-      answer: 'Nhi bataunga',
+      answer: 'Ans',
     },
   ];
 
