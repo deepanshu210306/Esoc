@@ -9,7 +9,7 @@ const EventsPage = () => {
       title: "Energy Innovation Summit 2023",
       date: "Dec 15, 2023",
       location: "IIT Delhi Main Auditorium",
-      image: "/images/events/event1.jpg",
+      image: "/team/dummy.jpg",
       description: "Join us for a day of innovation and networking with industry leaders and researchers in renewable energy."
     },
     {
@@ -17,7 +17,7 @@ const EventsPage = () => {
       title: "Renewable Energy Workshop",
       date: "Dec 22, 2023",
       location: "Block 5, Room 101",
-      image: "/images/events/event2.jpg",
+      image: "/team/dummy.jpg",
       description: "Hands-on workshop on solar panel installation and efficiency optimization."
     },
     {
@@ -25,7 +25,7 @@ const EventsPage = () => {
       title: "Energy Policy Debate",
       date: "Jan 10, 2024",
       location: "Online (Zoom)",
-      image: "/images/events/event3.jpg",
+      image: "/team/dummy.jpg",
       description: "A panel discussion on the future of energy policy in India and global implications."
     },
   ];
@@ -36,7 +36,7 @@ const EventsPage = () => {
       title: "Carbon Capture Technologies Symposium",
       date: "Oct 5, 2023",
       location: "Department of Energy Engineering",
-      image: "/images/events/event4.jpg",
+      image: "/team/dummy.jpg",
       description: "A symposium discussing latest advancements in carbon capture technologies."
     },
     {
@@ -44,7 +44,7 @@ const EventsPage = () => {
       title: "Sustainable Energy Hackathon",
       date: "Sept 15-17, 2023",
       location: "Innovation Lab, IIT Delhi",
-      image: "/images/events/event5.jpg",
+      image: "/team/dummy.jpg",
       description: "48-hour hackathon focused on software solutions for energy conservation."
     },
     {
@@ -52,7 +52,7 @@ const EventsPage = () => {
       title: "Nuclear Energy: Myths & Facts",
       date: "Aug 20, 2023",
       location: "Lecture Hall Complex",
-      image: "/images/events/event6.jpg",
+      image:"/team/dummy.jpg",
       description: "Educational seminar on nuclear energy technology and safety."
     },
   ];

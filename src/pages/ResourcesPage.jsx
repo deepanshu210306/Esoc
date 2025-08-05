@@ -101,7 +101,7 @@ const ResourcesPage = () => {
         </div>
       </div>
 
-      <section className="resources-section">
+      {/* <section className="resources-section">
         <div className="container">
           <h2 className="section-title">Publications</h2>
           <div className="resources-grid">
@@ -117,11 +117,11 @@ const ResourcesPage = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="resources-section alt-bg">
         <div className="container">
-          <h2 className="section-title">Semester Resources</h2>
+          <h2 className="section-title">Btech Resources</h2>
           <div className="resources-grid">
             {resources.educationalMaterials.map(item => (
               <div className="resource-card" key={item.id}>

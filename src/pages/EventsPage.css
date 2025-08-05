@@ -40,6 +40,7 @@
 
 .upcoming-events {
   background-color: var(--background-white);
+  
 }
 
 .past-events {
@@ -115,4 +116,30 @@
   .upcoming-events, .past-events {
     padding: 3rem 0.5rem;
   }
+}
+
+.event-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 500px; /* Ensures card stretches to full height of container */
+  /* min-height: 400px; Adjust height as per your layout */
+  /* max-height: 400px; */
+  box-sizing: border-box;
+
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  overflow: hidden;
+}
+
+
+.event-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
 }
