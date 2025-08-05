@@ -1,25 +1,31 @@
-import { useEffect, useState } from 'react';
+import { useState, useEffect } from 'react';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 import './Navbar.css';
-import logocom from './logo.svg';
-import { Link } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
+import logoImage from '../assets/logo.png';
 
 const Navbar = () => {
-
-  const navigate = useNavigate();
-
+  const [isScrolled, setIsScrolled] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
+  const location = useLocation();
 
+  // Scroll styling effect
   useEffect(() => {
-    const handleScroll = () => {
+    const handleScrollStyle = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+    window.addEventListener('scroll', handleScrollStyle);
+    return () => window.removeEventListener('scroll', handleScrollStyle);
+  }, []);
+
+  // Hide-on-scroll logic
+  useEffect(() => {
+    const handleScrollVisibility = () => {
       const currentScrollY = window.scrollY;
       if (currentScrollY > lastScrollY && currentScrollY > 100) {
-        // Scrolling down and past 100px
         setIsVisible(false);
       } else if (currentScrollY < lastScrollY) {
-        // Scrolling up
         setIsVisible(true);
       }
       setLastScrollY(currentScrollY);
@@ -27,37 +33,54 @@ const Navbar = () => {
 
     const handleMouseMove = (e) => {
       if (e.clientY < 60) {
-        // Show navbar if cursor is within 60px from the top
         setIsVisible(true);
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScrollVisibility);
     window.addEventListener('mousemove', handleMouseMove);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('scroll', handleScrollVisibility);
       window.removeEventListener('mousemove', handleMouseMove);
     };
   }, [lastScrollY]);
 
-  // Hamburger menu state and toggle function have been removed.
-
   return (
-    <nav className={`navbar ${isVisible ? 'visible' : 'hidden'}`}>
-      <div className="logo">
-        <Link to="/  ">
-          <img src={logocom} alt="Energy Soc Logo" />
+    <nav className={`navbar ${isScrolled ? 'scrolled' : ''} ${isVisible ? 'visible' : 'hidden'}`}>
+      <div className="navbar-container">
+        <Link to="/" className="navbar-logo">
+          <img src={logoImage} alt="Energy Society Logo" className="logo-img" />
         </Link>
+
+        <ul className="nav-menu">
+          <li className="nav-item">
+            <NavLink to="/" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
+              Home
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink to="/about" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
+              About
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink to="/events" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
+              Events
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink to="/resources" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
+              Resources
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink to="/team" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
+              Team
+            </NavLink>
+          </li>
+        </ul>
       </div>
-      
-      {/* The nav links are now always visible */}
-      <ul className="nav-links">
-        <li onClick={()=>{navigate("/")}}>Home</li>
-        <li onClick={()=>{navigate("/team")}}>Team</li>
-        <li >Contact</li>
-        <li>FAQs</li>
-      </ul>
     </nav>
   );
 };

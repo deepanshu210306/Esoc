@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Hero.css';
 import headerClip from './header_clip.mp4';
 
@@ -29,6 +30,10 @@ const Hero = () => {
         <p className="hero-tagline">
           A dynamic student-led initiative committed to driving awareness, innovation, and action in the energy sector. We bridge the gap between academia, industry, and policy to empower the next generation of energy leaders.
         </p>
+        {/* <div className="hero-buttons">
+          <Link to="/about" className="btn btn-primary">Learn More</Link>
+          <Link to="/events" className="btn btn-yellow">Our Events</Link>
+        </div> */}
       </div>
     </section>
   );

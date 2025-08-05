@@ -32,7 +32,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for text readability */
+  background: linear-gradient(rgba(13, 40, 80, 0.7), rgba(43, 50, 71, 0.8)); /* Blue-yellow theme */
   z-index: 2;
 }
 
@@ -58,7 +58,7 @@
 .hero-subtitle {
   /* Fluid font size for smooth scaling */
   font-size: clamp(1.2rem, 5vw, 2rem);
-  color: white;
+  color: var(--primary-yellow); /* Changed to primary yellow */
   font-weight: 400;
   margin-top: 0.5rem;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
@@ -72,4 +72,43 @@
   color: rgba(255, 255, 255, 0.9);
 }
 
-/* No specific media queries needed due to clamp() */
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.hero-buttons .btn {
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: var(--primary-blue);
+  color: white;
+  border: 2px solid white;
+}
+
+.btn-primary:hover {
+  background-color: white;
+  color: var(--primary-blue);
+}
+
+.btn-yellow {
+  background-color: var(--primary-yellow);
+  color: var(--primary-blue);
+}
+
+.btn-yellow:hover {
+  background-color: var(--secondary-yellow);
+}
+
+@media (max-width: 768px) {
+  .hero-buttons {
+    flex-direction: column;
+    width: 80%;
+    max-width: 300px;
+  }
+}

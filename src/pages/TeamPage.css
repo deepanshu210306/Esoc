@@ -1,0 +1,435 @@
+.team-page {
+  padding-top: 0;
+}
+
+.team-header {
+  position: relative;
+  overflow: hidden;
+}
+
+
+.floating-shapes .shape {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  animation: float 15s infinite ease-in-out;
+}
+
+.shape-1 {
+  width: 80px;
+  height: 80px;
+  top: 10%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.shape-2 {
+  width: 60px;
+  height: 60px;
+  top: 20%;
+  right: 15%;
+  animation-delay: 2s;
+}
+
+.shape-3 {
+  width: 40px;
+  height: 40px;
+  bottom: 15%;
+  left: 20%;
+  animation-delay: 4s;
+}
+
+.shape-4 {
+  width: 100px;
+  height: 100px;
+  bottom: 20%;
+  right: 10%;
+  animation-delay: 6s;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateY(-20px) rotate(180deg);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(0) rotate(360deg);
+    opacity: 0.5;
+  }
+}
+
+.team-categories {
+  background-color: var(--background-white);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  padding: 1rem 0;
+  position: sticky;
+  top: 70px;
+  z-index: 100;
+}
+
+.category-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.category-buttons button {
+  background-color: transparent;
+  color: var(--text-dark);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.category-buttons button:hover {
+  background-color: var(--gray-200);
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.category-buttons button.active {
+  background-color: var(--primary-blue);
+  color: var(--text-light);
+}
+
+.animate-section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.animate-section.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.faculty-section {
+  padding: 5rem 0;
+  background-color: var(--background-white);
+}
+
+.faculty-card {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+  max-width: 900px;
+  margin: 0 auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faculty-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--box-shadow-lg);
+}
+
+.faculty-image {
+  flex: 0 0 300px;
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+}
+
+.faculty-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.faculty-card:hover .faculty-image img {
+  transform: scale(1.05);
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(26, 75, 148, 0.3), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.faculty-card:hover .image-overlay,
+.team-card:hover .image-overlay {
+  opacity: 1;
+}
+
+.faculty-info {
+  flex: 1;
+  padding: 2.5rem;
+}
+
+.faculty-info h3 {
+  font-size: 2rem;
+  color: var(--primary-blue);
+  margin-bottom: 0.5rem;
+}
+
+.faculty-position {
+  color: var(--primary-yellow);
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.faculty-bio {
+  line-height: 1.7;
+  color: var(--gray-700);
+  margin-bottom: 1.5rem;
+}
+
+.faculty-social, .member-social {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.social-icon, .social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: var(--primary-blue);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover, .social-link:hover {
+  background-color: var(--primary-yellow);
+  color: var(--text-dark);
+  transform: translateY(-3px);
+}
+
+.panel-section {
+  padding: 5rem 0;
+  background-color: var(--background-light);
+}
+
+.verticals-section {
+  padding: 5rem 0;
+  background-color: var(--background-white);
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2.5rem;
+}
+
+.small-grid {
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.team-card {
+  background: white;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s forwards;
+  animation-play-state: paused;
+}
+
+.team-card.in-view {
+  animation-play-state: running;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.team-card:hover {
+  transform: translateY(-7px);
+  box-shadow: var(--box-shadow-lg);
+}
+
+.small-card {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.member-image {
+  height: 320px;
+  overflow: hidden;
+  position: relative;
+}
+
+.small-card .member-image {
+  height: 250px;
+}
+
+.member-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.team-card:hover .member-image img {
+  transform: scale(1.05);
+}
+
+.member-info {
+  padding: 1.5rem;
+  text-align: center;
+  position: relative;
+}
+
+.member-info h3 {
+  font-size: 1.25rem;
+  color: var(--primary-blue);
+  margin-bottom: 0.3rem;
+}
+
+.small-card .member-info h3 {
+  font-size: 1.1rem;
+}
+
+.member-position {
+  color: var(--gray-600);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.member-social {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.vertical-block {
+  margin-bottom: 4rem;
+}
+
+.vertical-title {
+  color: var(--primary-blue);
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+  padding-bottom: 0.75rem;
+  position: relative;
+}
+
+.vertical-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(to right, var(--primary-blue), var(--primary-yellow));
+  border-radius: 2px;
+}
+
+.vertical-members h4 {
+  color: var(--gray-700);
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.executives {
+  margin-top: 3rem;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: var(--primary-blue);
+}
+
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid var(--gray-300);
+  border-top: 5px solid var(--primary-blue);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.error {
+  text-align: center;
+  padding: 3rem;
+  margin-top: 120px;
+  font-size: 1.2rem;
+  color: var(--gray-700);
+}
+
+@media (max-width: 992px) {
+  .faculty-card {
+    flex-direction: column;
+    max-width: 450px;
+  }
+  
+  .faculty-image {
+    flex: 0 0 100%;
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .team-categories {
+    top: 60px;
+  }
+  
+  .faculty-info {
+    padding: 1.5rem;
+  }
+  
+  .faculty-info h3 {
+    font-size: 1.75rem;
+  }
+  
+  .team-grid {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  }
+  
+  .small-grid {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+  
+  .vertical-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .small-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+  
+  .category-buttons button {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+}
