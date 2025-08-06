@@ -99,15 +99,36 @@ nav.navbar {
 }
 
 /* Responsive: keep desktop look on all screens */
+/* Fix container layout wrapping for smaller screens */
 @media screen and (max-width: 960px) {
+  .navbar-container {
+    flex-wrap: nowrap;          /* Prevent wrapping */
+    justify-content: space-between; /* Maintain left-right alignment */
+  }
+
+  .navbar-logo {
+    width: auto;                /* Let logo take natural size */
+    justify-content: flex-start;
+    margin-bottom: 0;           /* Remove margin below logo */
+  }
+
+  .logo-img {
+    height: 40px;               /* Slightly smaller for mobile */
+    width: auto;
+    display: block;
+  }
+
   .nav-menu {
     display: flex !important;
     flex-direction: row !important;
-    position: static !important;
-    opacity: 1 !important;
+    justify-content: flex-end;
+    align-items: center;
+    width: auto !important;
     background-color: transparent !important;
     box-shadow: none !important;
-    width: auto !important;
+    opacity: 1 !important;
+    position: static !important;
+    margin-left: auto;
   }
 
   .nav-item {
@@ -126,8 +147,30 @@ nav.navbar {
   .navbar.scrolled {
     padding: 0.5rem 0;
   }
+}
+@media screen and (max-width: 590px) {
+  .navbar-container {
+    padding: 0 0.5rem;             /* Reduce horizontal padding */
+  }
+
+  .navbar-logo {
+    margin-left: 0;                /* Align logo to left */
+  }
 
   .logo-img {
-    height: 32px;
+    height: 36px;                  /* Prevent shrinking too much */
+    min-width: 40px;               /* Ensure logo doesn’t collapse */
+    max-width: 100px;
+    object-fit: contain;           /* Prevent distortion */
+  }
+
+  .nav-menu {
+    gap: 0.3rem !important;        /* Reduce space between nav items */
+  }
+
+  .nav-link {
+    font-size: 0.85rem;            /* Slightly smaller font */
+    padding: 0.4rem 0.6rem !important; /* Less padding */
   }
 }
+
