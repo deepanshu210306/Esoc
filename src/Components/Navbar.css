@@ -1,4 +1,4 @@
-/* Base styles for the navbar */
+/* Base navbar styling */
 nav.navbar {
   position: fixed;
   top: 0;
@@ -12,6 +12,7 @@ nav.navbar {
   pointer-events: all;
 }
 
+/* Scrolled styling */
 .navbar.scrolled {
   background-color: var(--primary-blue);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -19,16 +20,17 @@ nav.navbar {
   opacity: 1;
 }
 
+/* Hide-on-scroll behavior */
 .navbar.hidden {
   transform: translateY(-100%);
   transition: transform 0.3s ease;
 }
-
 .navbar.visible {
   transform: translateY(0);
   transition: transform 0.3s ease;
 }
 
+/* Navbar container */
 .navbar-container {
   display: flex;
   justify-content: space-between;
@@ -39,29 +41,28 @@ nav.navbar {
   padding: 0 1rem;
 }
 
+/* Logo */
 .navbar-logo {
   display: flex;
   align-items: center;
   text-decoration: none;
   color: var(--text-light);
 }
-
 .logo-img {
   height: 50px;
   width: auto;
 }
 
+/* Desktop menu */
 .nav-menu {
   display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
 }
-
-  .nav-item {
-    margin: 0 0.25rem;
-  }
-
+.nav-item {
+  margin: 0 0.25rem;
+}
 .nav-link {
   color: var(--text-light);
   text-decoration: none;
@@ -71,11 +72,9 @@ nav.navbar {
   position: relative;
   display: block;
 }
-
 .nav-link:hover {
   color: var(--primary-yellow);
 }
-
 .nav-link::after {
   content: '';
   position: absolute;
@@ -88,89 +87,82 @@ nav.navbar {
   transform: translateX(-50%);
   opacity: 0;
 }
-
 .nav-link.active::after {
   width: 30px;
   opacity: 1;
 }
-
 .nav-link.active {
   color: var(--primary-yellow);
 }
 
-/* Responsive: keep desktop look on all screens */
-/* Fix container layout wrapping for smaller screens */
+/* Hamburger icon (hidden by default) */
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  color: var(--text-light);
+}
+
+/* Responsive styles */
 @media screen and (max-width: 960px) {
-  .navbar-container {
-    flex-wrap: nowrap;          /* Prevent wrapping */
-    justify-content: space-between; /* Maintain left-right alignment */
-  }
-
-  .navbar-logo {
-    width: auto;                /* Let logo take natural size */
-    justify-content: flex-start;
-    margin-bottom: 0;           /* Remove margin below logo */
-  }
-
-  .logo-img {
-    height: 40px;               /* Slightly smaller for mobile */
-    width: auto;
+  .menu-icon {
     display: block;
   }
 
   .nav-menu {
-    display: flex !important;
-    flex-direction: row !important;
-    justify-content: flex-end;
-    align-items: center;
-    width: auto !important;
-    background-color: transparent !important;
-    box-shadow: none !important;
-    opacity: 1 !important;
-    position: static !important;
-    margin-left: auto;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background-color: var(--primary-blue);
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 999;
+  }
+
+  .nav-menu.open {
+    display: flex;
+    opacity: 1;
   }
 
   .nav-item {
-    margin: 0 0.25rem !important;
+    text-align: center;
+    margin: 0.5rem 0;
   }
 
   .nav-link {
-    padding: 0.5rem 1rem !important;
-    text-align: center;
+    padding: 1rem;
+    display: block;
+    width: 100%;
   }
 
-  .menu-icon {
-    display: none !important;
-  }
-
-  .navbar.scrolled {
-    padding: 0.5rem 0;
-  }
-}
-@media screen and (max-width: 590px) {
   .navbar-container {
-    padding: 0 0.5rem;             /* Reduce horizontal padding */
-  }
-
-  .navbar-logo {
-    margin-left: 0;                /* Align logo to left */
+    flex-wrap: nowrap;
+    justify-content: space-between;
   }
 
   .logo-img {
-    height: 36px;                  /* Prevent shrinking too much */
-    min-width: 40px;               /* Ensure logo doesn’t collapse */
-    max-width: 100px;
-    object-fit: contain;           /* Prevent distortion */
+    height: 40px;
+  }
+}
+
+/* Smaller screen tweaks */
+@media screen and (max-width: 590px) {
+  .navbar-container {
+    padding: 0 0.5rem;
   }
 
-  .nav-menu {
-    gap: 0.3rem !important;        /* Reduce space between nav items */
+  .logo-img {
+    height: 36px;
+    min-width: 40px;
+    max-width: 100px;
+    object-fit: contain;
   }
 
   .nav-link {
-    font-size: 0.85rem;            /* Slightly smaller font */
-    padding: 0.4rem 0.6rem !important; /* Less padding */
+    font-size: 0.85rem;
+    padding: 0.4rem 0.6rem;
   }
 }
 
