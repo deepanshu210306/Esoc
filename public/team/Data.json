@@ -2,7 +2,7 @@
   "facultyCoordinator": {
     "name": "Prof. Kaushik Saha",
     "position": "Faculty Coordinator",
-    "image": "/team/dummy.jpg"
+    "image": "/team/kaushik-saha.png"
   },
   "panelMembers": [
     {
@@ -25,8 +25,7 @@
     "designOps": {
       "coordinators": [
         { "name": "Deepanshu", "position": "Coordinator", "image": "/team/deepanshu.jpg" },
-        { "name": "Sarthak Garg", "position": "Coordinator", "image": "/team/sarthak-garg.jpg" },
-        { "name": "Sanidhya Bhupesh", "position": "Coordinator", "image": "/team/dummy.jpg" }
+        { "name": "Sanidhya Bhupesh", "position": "Coordinator", "image": "/team/sanidhya-bhupesh.jpg" }
       ],
       "executives": [
         { "name": "Sayantan Roy", "position": "Executive", "image": "/team/sayantan-roy.jpg" },
@@ -58,8 +57,8 @@
     },
     "adminFinance": {
       "coordinators": [
-        
-        { "name": "Amaan Ansari", "position": "Coordinator", "image": "/team/dummy.jpg" }
+        { "name": "Amaan Ansari", "position": "Coordinator", "image": "/team/amaan-ansari.jpg" },
+        { "name": "Sarthak Garg", "position": "Coordinator", "image": "/team/sarthak-garg.jpg" }
       ],
       "executives": [
         { "name": "Anushree Goyal", "position": "Executive", "image": "/team/anushree-goyal.jpg" },
