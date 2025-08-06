@@ -8,28 +8,28 @@ const HomeSections = () => {
       title: "About Us",
       description: "Learn about our mission, vision, and the impact we're making in the energy sector.",
       link: "/about",
-      image: "/team/dummy.jpg",
+      image: "/about-us.jpeg",
     },
     {
       id: 2,
       title: "Events",
       description: "Discover our upcoming and past events focused on energy innovation and networking.",
       link: "/events",
-      image: "/team/dummy.jpg",
+      image: "/events.jpg",
     },
     {
       id: 3,
       title: "Resources",
       description: "Access valuable resources, publications, and learning materials for energy enthusiasts.",
       link: "/resources",
-      image: "/team/dummy.jpg",
+      image: "/resources.webp",
     },
     {
       id: 4,
       title: "Meet Our Team",
       description: "Get to know the dedicated individuals working behind Energy Society at IIT Delhi.",
       link: "/team",
-      image: "/team/dummy.jpg",
+      image: "/meet-our-team.jpeg",
     },
   ];
 
