@@ -35,7 +35,7 @@ const ResourcesPage = () => {
         title: "Semester 3",
         type: "Resources Drive",
         instructor: "Prof. Sanjay Kumar",
-        link: "#",
+        link: "https://csciitd-my.sharepoint.com/personal/es1221792_iitd_ac_in/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fes1221792%5Fiitd%5Fac%5Fin%2FDocuments%2FShreyans%20Singh%27s%20Acad%20Drive%2Fsem%203&ga=1",
         description: "ESL100, ESL260, ESL261, ESL220,"
       },
       {
@@ -43,7 +43,7 @@ const ResourcesPage = () => {
         title: "Semester 4",
         type: "Resources Drive",
         instructor: "Dr. Priya Sharma",
-        link: "#",
+        link: "https://csciitd-my.sharepoint.com/personal/es1221792_iitd_ac_in/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fes1221792%5Fiitd%5Fac%5Fin%2FDocuments%2FShreyans%20Singh%27s%20Acad%20Drive%2Fsem%204&ga=1",
         description: "Comprehensive guide to various energy storage technologies and their applications."
       },
       {
@@ -51,7 +51,7 @@ const ResourcesPage = () => {
         title: "Semester 5",
         type: "Resources Drive",
         instructor: "Prof. Rajiv Mishra",
-        link: "#",
+        link: "https://csciitd-my.sharepoint.com/personal/es1221792_iitd_ac_in/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fes1221792%5Fiitd%5Fac%5Fin%2FDocuments%2FShreyans%20Singh%27s%20Acad%20Drive%2Fsem%205&ga=1",
         description: "Overview of energy policies, regulations, and governance structures in India."
       },
       {
@@ -59,7 +59,7 @@ const ResourcesPage = () => {
         title: "Semester 6",
         type: "Resources Drive",
         instructor: "Prof. Rajiv Mishra",
-        link: "#",
+        link: "https://csciitd-my.sharepoint.com/personal/es1210186_iitd_ac_in/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fes1210186%5Fiitd%5Fac%5Fin%2FDocuments%2FResources%20ES1%2FSEM%206&ga=1",
         description: "Overview of energy policies, regulations, and governance structures in India."
       },
       {
@@ -67,7 +67,7 @@ const ResourcesPage = () => {
         title: "Semester 7",
         type: "Resources Drive",
         instructor: "Prof. Rajiv Mishra",
-        link: "#",
+        link: "https://csciitd-my.sharepoint.com/personal/es1210186_iitd_ac_in/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fes1210186%5Fiitd%5Fac%5Fin%2FDocuments%2FResources%20ES1%2FSEM%207&ga=1",
         description: "Overview of energy policies, regulations, and governance structures in India."
       },
       {

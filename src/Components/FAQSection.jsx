@@ -5,20 +5,20 @@ import icon from './icon.svg'; // Importing the SVG file from the same directory
 const FAQSection = () => {
   const faqs = [
     {
-      question: 'question',
-      answer: 'Ans',
+      question: 'What kind of events does the Energy Society organize?',
+      answer: 'We organize a diverse range of events including technical workshops, guest lectures by industry experts, sustainability-focused hackathons, energy-themed quizzes, and industrial visits.',
     },
     {
-     question: 'question',
-      answer: 'Ans',
+     question: 'Are first-year students allowed to participate in core activities, or are they limited to observing?',
+      answer: 'Yes, first-year students are encouraged to actively participate in events and core activities, rather than simply observing.',
     },
     {
-      question: 'question',
-      answer: 'Ans',
+      question: ' Are the events open to everyone or only to IIT Delhi students?',
+      answer: 'While most events are open to all IIT Delhi students, some may also welcome external participants depending on the format and scope of the event.',
     },
     {
-      question: 'question',
-      answer: 'Ans',
+      question: 'Can students from other branches join the Energy Society team?',
+      answer: 'While the Energy Society primarily focuses on students from related branches, we strongly value passion and commitment. If you’re genuinely interested in energy, sustainability, and want to actively contribute, students from other branches are welcome to apply — there’s definitely a possibility to join.',
     },
   ];
 
