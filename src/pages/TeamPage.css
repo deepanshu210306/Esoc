@@ -223,12 +223,24 @@
   padding: 5rem 0;
   background-color: var(--background-white);
 }
-
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 2.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* ✅ 1fr instead of auto */
+  gap: 2rem;
+  justify-content: center;
+  margin: 0 auto;  /* ✅ centers grid itself */
+  max-width: 1200px; /* ✅ optional, controls row width */
 }
+
+.executive-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* keep 1fr */
+  gap: 1.5rem;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
 
 .small-grid {
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -267,21 +279,27 @@
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
 }
 
-.member-image {
-  height: 320px;
-  overflow: hidden;
-  position: relative;
-}
 
 .small-card .member-image {
   height: 250px;
 }
 
-.member-image img {
+.member-image {
+  height: 320px;       /* fixed constant height */
+  overflow: hidden;    /* hide cropped part */
+}
+
+.faculty-image {
+  height: 350px;       /* fixed constant height */
+  overflow: hidden;
+}
+
+.member-image img,
+.faculty-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  transition: transform 0.5s ease;
+  object-fit: cover;    /* fill container */
+  object-position: top; /* keep upper half visible */
 }
 
 .team-card:hover .member-image img {
@@ -358,6 +376,28 @@
   color: var(--primary-blue);
 }
 
+.executive-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* smaller cards */
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.executive-grid .team-card {
+  max-width: 200px;
+}
+
+.executive-grid .member-image {
+  height: 220px;   /* smaller height */
+}
+.team-grid, 
+.executive-grid {
+  justify-content: center;   /* horizontally center */
+  align-items: center;       /* vertically center (if needed) */
+}
+
+
+
 .loading-spinner {
   width: 50px;
   height: 50px;
@@ -379,6 +419,62 @@
   margin-top: 120px;
   font-size: 1.2rem;
   color: var(--gray-700);
+}
+
+/* Make panel cards even size */
+.panel-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2.5rem;
+  justify-content: center;
+  justify-items: center; /* Center each item in its grid cell */
+}
+
+.panel-grid .team-card {
+  width: 100%;
+  max-width: 280px; /* Fixed maximum width */
+  height: 450px; /* Fixed height for all panel cards */
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.panel-grid .member-image {
+  width: 100%;
+  height: 320px; /* Fixed height for all panel member images */
+  overflow: hidden;
+}
+
+.panel-grid .member-info {
+  padding: 1.5rem;
+  flex-grow: 1; /* Take up remaining space */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.panel-grid .member-info h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.3rem;
+  /* Ensure text doesn't overflow and break layout */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* For mobile responsiveness */
+@media (max-width: 768px) {
+  .panel-grid {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  }
+  
+  .panel-grid .team-card {
+    max-width: 240px;
+    height: 420px;
+  }
+  
+  .panel-grid .member-image {
+    height: 280px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -431,5 +527,52 @@
   .category-buttons button {
     padding: 0.4rem 0.8rem;
     font-size: 0.9rem;
+  }
+}
+
+/* Make panel grid display in a single row in landscape mode */
+.panel-grid {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 1.5rem;
+  padding: 1rem 0;
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  justify-content: flex-start; /* Start from left */
+  width: 100%;
+}
+
+.panel-grid::-webkit-scrollbar {
+  height: 6px;
+}
+
+.panel-grid::-webkit-scrollbar-thumb {
+  background-color: var(--gray-400);
+  border-radius: 10px;
+}
+
+.panel-grid::-webkit-scrollbar-track {
+  background-color: var(--gray-200);
+  border-radius: 10px;
+}
+
+.panel-grid .team-card {
+  flex: 0 0 280px; /* Fixed width, no growing or shrinking */
+  max-width: 280px;
+  height: 450px;
+  margin-right: 0; /* Remove right margin to ensure proper spacing */
+}
+
+/* Adjust for mobile devices in portrait mode */
+@media (max-width: 768px) and (orientation: portrait) {
+  .panel-grid {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .panel-grid .team-card {
+    flex: 0 0 240px;
   }
 }
