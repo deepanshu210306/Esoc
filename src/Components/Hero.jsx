@@ -3,6 +3,10 @@ import { Link } from 'react-router-dom';
 import './Hero.css';
 import headerClip from './header_clip.mp4';
 
+// CDN URL for the header video - replace with your actual CDN URL
+const HEADER_VIDEO_URL = 'https://esoc-videos.b-cdn.net/header_clip.mp4';
+// const HEADER_VIDEO_URL = 'https://esoc-videos.b-cdn.net/header_clip.mp4' || headerClip;
+
 const Hero = () => {
   return (
     <section id="home" className="hero">
@@ -15,7 +19,7 @@ const Hero = () => {
           playsInline // Important for autoplay on mobile browsers
           className="hero-video"
         >
-          <source src={headerClip} type="video/mp4" />
+          <source src={HEADER_VIDEO_URL} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
