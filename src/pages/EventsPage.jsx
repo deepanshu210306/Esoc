@@ -4,27 +4,20 @@ import './EventsPage.css';
 
 const EventsPage = () => {
   const upcomingEvents = [
-    {
-      id: 1,
-      title: "Fresher's Orientation",
-      date: "Dec 15, 2023",
-      location: "IIT Delhi Main Auditorium",
-      image: "/events/upcoming.jpg",
-      description: "Welcoming fresh sparks to Energy Engineering—fun, friendships, and the start of an electrifying journey!"
-    },
+
     {
       id: 2,
       title: "Terra MUN",
-      date: "Dec 22, 2023",
-      location: "Block 5, Room 101",
+      date: "TBD",
+      location: "TBD",
       image: "/events/upcoming.jpg",
       description: "Terra MUN sparks global energy debates—lead, innovate, and unite for a sustainable future!"
     },
     {
       id: 3,
       title: "Fresher's party",
-      date: "Jan 10, 2024",
-      location: "Online (Zoom)",
+      date: "Sep 25, 2025",
+      location: "Darzi, CP",
       image: "/events/upcoming.jpg",
       description: "Dancing, laughter, and new bonds— the freshers party kicks off an unforgettable year!"
     },
@@ -41,11 +34,11 @@ const EventsPage = () => {
     },
     {
       id: 5,
-      title: "Joule Journal",
-      date: "Feb 14, 2025",
-      location: "Innovation Lab, IIT Delhi",
-      image: "/events/joule-journal.png",
-      description: "Your energy-packed dose of stories, tips, games, and campus buzz in one!"
+      title: "Fresher's Orientation",
+      date: "Sep 3, 2025",
+      location: "LH 422",
+      image: "/events/freshers-orientation.png",
+      description: "Welcoming fresh sparks to Energy Engineering—fun, friendships, and the start of an electrifying journey!"
     },
     {
       id: 6,

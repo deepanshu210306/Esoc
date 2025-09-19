@@ -12,9 +12,11 @@ const TeamPage = () => {
   };
 
   useEffect(() => {
+    if (!teamData) return;
+
     const observerOptions = {
       root: null,
-      rootMargin: '0px',
+      rootMargin: '0px 0px -50px 0px',
       threshold: 0.1
     };
 
@@ -22,20 +24,27 @@ const TeamPage = () => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('in-view');
+          
+          // Handle staggered animation for cards within sections
+          if (entry.target.classList.contains('animate-section')) {
+            const cards = entry.target.querySelectorAll('.team-card');
+            cards.forEach((card, index) => {
+              setTimeout(() => {
+                card.classList.add('animate-card');
+              }, index * 100);
+            });
+          }
         }
       });
     };
 
     const observer = new IntersectionObserver(observerCallback, observerOptions);
 
+    // Observe sections
     Object.values(sectionRefs).forEach(ref => {
       if (ref.current) {
         observer.observe(ref.current);
       }
-    });
-
-    document.querySelectorAll('.team-card').forEach(card => {
-      observer.observe(card);
     });
 
     return () => {
@@ -109,10 +118,6 @@ const TeamPage = () => {
               <p className="faculty-bio">
                 Department of Energy Engineering, IIT Delhi. Leading research in sustainable energy systems and mentoring the next generation of energy professionals.
               </p>
-              {/* <div className="faculty-social">
-                <a href="#" className="social-icon"><i className="fa fa-linkedin"></i></a>
-                <a href="#" className="social-icon"><i className="fa fa-envelope"></i></a>
-              </div> */}
             </div>
           </div>
         </div>
@@ -120,13 +125,12 @@ const TeamPage = () => {
 
       <section ref={sectionRefs.panel} className="panel-section animate-section">
         <div className="container">
-          <h2 className="section-title">Panel members</h2>
-          <div className="team-grid panel-grid">
+          <h2 className="section-title">Panel Members</h2>
+          <div className="panel-grid">
             {teamData.panelMembers.map((member, index) => (
               <div 
-                className="team-card" 
+                className="team-card panel-card" 
                 key={index}
-                style={{animationDelay: `${index * 0.1}s`}}
               >
                 <div className="member-image">
                   <img src={member.image} alt={member.name} />
@@ -135,10 +139,6 @@ const TeamPage = () => {
                 <div className="member-info">
                   <h3>{member.name}</h3>
                   <p className="member-position">{member.position}</p>
-                  {/* <div className="member-social">
-                    <a href="#" className="social-link"><i className="fa fa-linkedin"></i></a>
-                    <a href="#" className="social-link"><i className="fa fa-envelope"></i></a>
-                  </div> */}
                 </div>
               </div>
             ))}
@@ -156,12 +156,11 @@ const TeamPage = () => {
               <div className="vertical-members">
                 <div className="coordinators">
                   <h4>Coordinators</h4>
-                  <div className="team-grid small-grid">
+                  <div className="team-grid">
                     {vertical.coordinators.map((member, index) => (
                       <div 
-                        className="team-card small-card" 
+                        className="team-card" 
                         key={index}
-                        style={{animationDelay: `${(verticalIndex * 0.1) + (index * 0.05)}s`}}
                       >
                         <div className="member-image">
                           <img src={member.image} alt={member.name} />
@@ -178,12 +177,11 @@ const TeamPage = () => {
 
                 <div className="executives">
                   <h4>Executives</h4>
-                  <div className="team-grid small-grid">
+                  <div className="executive-grid">
                     {vertical.executives.map((member, index) => (
                       <div 
-                        className="team-card small-card" 
+                        className="team-card executive-card" 
                         key={index}
-                        style={{animationDelay: `${(verticalIndex * 0.1) + (index * 0.05)}s`}}
                       >
                         <div className="member-image">
                           <img src={member.image} alt={member.name} />

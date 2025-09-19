@@ -11,15 +11,11 @@
       "image": "/team/rhythm-shah.jpg"
     },
     {
-      "name": "Dhruv Chourasia",
-      "position": "Convenor",
-      "image": "/team/dhruv-chourasia.jpg"
-    },
-    {
       "name": "Shreyans Singh",
       "position": "Panel Member",
       "image": "/team/shreyans-singh.webp"
     },
+   
     {
       "name": "Divyansh Singh Narwaria",
       "position": "Panel Member",
@@ -29,6 +25,11 @@
       "name": "Thakur abhay veer singh",
       "position": "Panel Member",
       "image": "/team/Thakurabhayveersingh.png"
+    },
+     {
+      "name": "Dhruv Jain",
+      "position": "Panel Member",
+      "image": "/team/dhruv-jain.jpg"
     }
   ],
   "verticals": {
