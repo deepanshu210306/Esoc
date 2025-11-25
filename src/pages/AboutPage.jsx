@@ -49,7 +49,7 @@ const AboutPage = () => {
           <h2 className="section-title">Our History</h2>
           <div className="history-content">
             <p>
-              Founded in 2021, the Energy Society of IIT Delhi began as a small group of passionate students 
+              Founded in 2023, the Energy Society of IIT Delhi began as a small group of passionate students 
               interested in addressing energy challenges. Over the years, we've grown into a vibrant community 
               of students, faculty, and industry professionals working together to promote sustainable energy 
               solutions.
@@ -58,29 +58,15 @@ const AboutPage = () => {
               <div className="timeline-item">
                 <div className="timeline-dot"></div>
                 <div className="timeline-content">
-                  <h3>2021</h3>
+                  <h3>2023</h3>
                   <p>Energy Society officially founded at IIT Delhi</p>
                 </div>
               </div>
               <div className="timeline-item">
                 <div className="timeline-dot"></div>
                 <div className="timeline-content">
-                  <h3>2022</h3>
-                  <p>Organised many department trips and events</p>
-                </div>
-              </div>
-              <div className="timeline-item">
-                <div className="timeline-dot"></div>
-                <div className="timeline-content">
-                  <h3>2023</h3>
-                  <p>Launched Guest lectures with many Industry leaders</p>
-                </div>
-              </div>
-              <div className="timeline-item">
-                <div className="timeline-dot"></div>
-                <div className="timeline-content">
                   <h3>2024</h3>
-                  <p>Expanded to include industry partnerships and internship programs</p>
+                  <p>Launched Guest lectures with many Industry leaders</p>
                 </div>
               </div>
               <div className="timeline-item">
@@ -90,6 +76,7 @@ const AboutPage = () => {
                   <p>Official Launch of the website</p>
                 </div>
               </div>
+
             </div>
           </div>
         </div>

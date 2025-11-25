@@ -125,7 +125,7 @@ const TeamPage = () => {
 
       <section ref={sectionRefs.panel} className="panel-section animate-section">
         <div className="container">
-          <h2 className="section-title">Panel Members</h2>
+          <h2 className="section-title">OC & Panel Members</h2>
           <div className="panel-grid">
             {teamData.panelMembers.map((member, index) => (
               <div 
