@@ -59,7 +59,7 @@ const AboutPage = () => {
                 <div className="timeline-dot"></div>
                 <div className="timeline-content">
                   <h3>2023</h3>
-                  <p>Energy Society officially founded at IIT Delhi</p>
+                  <p>Energy Society originated from Energy Forem IIT Delhi</p>
                 </div>
               </div>
               <div className="timeline-item">
@@ -73,7 +73,7 @@ const AboutPage = () => {
                 <div className="timeline-dot"></div>
                 <div className="timeline-content">
                   <h3>2025</h3>
-                  <p>Official Launch of the website</p>
+                  <p>Collaboration with Intellismart and Official Launch of the website</p>
                 </div>
               </div>
 

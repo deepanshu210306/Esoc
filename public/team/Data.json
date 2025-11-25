@@ -51,8 +51,7 @@
       ],
       "executives": [
         { "name": "Gagan Maharana", "position": "Executive", "image": "/team/gagan-maharana.png" },
-        { "name": "Rudraa Tyagi", "position": "Executive", "image": "/team/rudraa-tyagi.jpg" },
-        { "name": "Parav Jaikrishan", "position": "Executive", "image": "/team/parav-jaikrishan.jpg" }
+        { "name": "Rudraa Tyagi", "position": "Executive", "image": "/team/rudraa-tyagi.jpg" }
       ]
     },
     "events": {
