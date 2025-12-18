@@ -46,7 +46,7 @@ const HomeSections = () => {
               <div className="section-content">
                 <h3>{section.title}</h3>
                 <p>{section.description}</p>
-                <Link to={section.link} className="btn-outline">
+                <Link to={section.link} className="home-card-btn">
                   Learn More
                 </Link>
               </div>

@@ -41,7 +41,9 @@
       "executives": [
         { "name": "Sayantan Roy", "position": "Executive", "image": "/team/sayantan-roy.jpg" },
         { "name": "Vedant Kumar", "position": "Executive", "image": "/team/vedant-kumar.webp" },
-        { "name": "Subh Agrawal", "position": "Executive", "image": "/team/subh-agrawal.jpg" }
+        { "name": "Subh Agrawal", "position": "Executive", "image": "/team/subh-agrawal.jpg" },
+        { "name": "Prashant", "position": "Executive", "image": "/team/Prashant.jpg" },
+        { "name": "Rahan Shivam", "position": "Executive", "image": "/team/Rahan Shivam.png" }
       ]
     },
     "outreachMarketing": {
@@ -51,7 +53,9 @@
       ],
       "executives": [
         { "name": "Gagan Maharana", "position": "Executive", "image": "/team/gagan-maharana.png" },
-        { "name": "Rudraa Tyagi", "position": "Executive", "image": "/team/rudraa-tyagi.jpg" }
+        { "name": "Rudraa Tyagi", "position": "Executive", "image": "/team/rudraa-tyagi.jpg" },
+        { "name": "Poornima", "position": "Executive", "image": "/team/Poornima.jpg" },
+        { "name": "Utkarsh Teejwal", "position": "Executive", "image": "/team/Utkarsh Teejwal.jpg" }
       ]
     },
     "events": {
@@ -62,7 +66,8 @@
       "executives": [
         { "name": "Rachit Gupta", "position": "Executive", "image": "/team/rachit-gupta.jpg" },
         { "name": "Shubhankara Dash", "position": "Executive", "image": "/team/shubhankara-dash.jpeg" },
-        { "name": "Navneet Yadav", "position": "Executive", "image": "/team/navneet-yadav.jpg" }
+        { "name": "Prerna Joshi", "position": "Executive", "image": "/team/Prerna Joshi.png" },
+        { "name": "Priyanshu Tiwari", "position": "Executive", "image": "/team/Priyanshu Tiwari.png" }
       ]
     },
     "adminFinance": {

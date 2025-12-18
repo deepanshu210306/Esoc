@@ -4,33 +4,42 @@ import './EventsPage.css';
 
 const EventsPage = () => {
   const upcomingEvents = [
-
     {
-      id: 2,
-      title: "Terra MUN",
-      date: "TBD",
-      location: "TBD",
+      id: 1,
+      title: "IntelliSmart Collaboration",
+      date: "Date to be decided",
+      location: "Venue to be decided",
       image: "/events/upcoming.jpg",
-      description: "Terra MUN sparks global energy debates—lead, innovate, and unite for a sustainable future!"
+      description: "Stay tuned for our upcoming collaboration event with IntelliSmart. Details will be updated soon."
     },
     {
-      id: 3,
-      title: "Fresher's party",
-      date: "Sep 25, 2025",
-      location: "Darzi, CP",
+      id: 2,
+      title: "Energy Hackathon – Tryst 2026",
+      date: "During Tryst 2026",
+      location: "IIT Delhi",
       image: "/events/upcoming.jpg",
-      description: "Dancing, laughter, and new bonds— the freshers party kicks off an unforgettable year!"
+      description: "An intense energy-focused hackathon as part of Tryst 2026. More details coming soon."
     },
   ];
 
   const pastEvents = [
+    {
+      id: 3,
+      title: "Tour of Stalls",
+      date: "2025",
+      location: "IIT Delhi",
+      image: "/events/Tour of stalls.jpg",
+      description: "A guided tour of society stalls showcasing initiatives, projects, and opportunities for students.",
+      link: "https://www.instagram.com/p/DQQipTUEzYX/?img_index=1"
+    },
     {
       id: 4,
       title: "Departmental Dinner 2025",
       date: "Apr 25, 2025",
       location: "Department of Energy Engineering",
       image: "/events/departmental-dinner-2025.jpg",
-      description: " A night of laughter, awards, farewells, and unforgettable department memories."
+      description: " A night of laughter, awards, farewells, and unforgettable department memories.",
+      link: "https://www.instagram.com/p/DLkD5SFzpqO/?img_index=1"
     },
     {
       id: 5,
@@ -38,15 +47,8 @@ const EventsPage = () => {
       date: "Sep 3, 2025",
       location: "LH 422",
       image: "/events/freshers-orientation.png",
-      description: "Welcoming fresh sparks to Energy Engineering—fun, friendships, and the start of an electrifying journey!"
-    },
-    {
-      id: 6,
-      title: "Podcast",
-      date: "Aug 20, 2023",
-      location: "Online (Zoom)",
-      image:"/events/podcast.png",
-      description: "Fresh podcast chats with experts diving into energy trends, innovation, and inspiring stories!"
+      description: "Welcoming fresh sparks to Energy Engineering—fun, friendships, and the start of an electrifying journey!",
+      link: "https://www.instagram.com/p/DPRhegyk6I5/?img_index=1"
     },
   ];
 

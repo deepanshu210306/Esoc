@@ -81,7 +81,16 @@ const EventsCarousel = ({ events }) => {
                   <i className="fas fa-map-marker-alt"></i> {event.location}
                 </div>
                 <p className="event-description">{event.description}</p>
-                <button className="event-button">View Details</button>
+                {event.link && (
+                  <a
+                    href={event.link}
+                    className="event-button"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    View Details
+                  </a>
+                )}
               </div>
             </div>
           </SwiperSlide>

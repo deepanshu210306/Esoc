@@ -85,6 +85,26 @@ const TeamPage = () => {
     adminFinance: "Admin & Finance"
   };
 
+  const overallCoordinator = teamData.panelMembers.find(
+    (member) => member.position.toLowerCase().includes('overall coordinator')
+  );
+
+  const panelOnlyMembers = teamData.panelMembers.filter(
+    (member) => member !== overallCoordinator
+  );
+
+  const coordinatorsList = [];
+  const executivesList = [];
+
+  Object.entries(teamData.verticals).forEach(([key, vertical]) => {
+    vertical.coordinators.forEach((member) => {
+      coordinatorsList.push({ ...member, verticalKey: key });
+    });
+    vertical.executives.forEach((member) => {
+      executivesList.push({ ...member, verticalKey: key });
+    });
+  });
+
   return (
     <div className="team-page">
       <div className="page-header team-header">
@@ -125,13 +145,58 @@ const TeamPage = () => {
 
       <section ref={sectionRefs.panel} className="panel-section animate-section">
         <div className="container">
-          <h2 className="section-title">OC & Panel Members</h2>
-          <div className="panel-grid">
-            {teamData.panelMembers.map((member, index) => (
-              <div 
-                className="team-card panel-card" 
-                key={index}
-              >
+          <h2 className="section-title">Core Team</h2>
+
+          {overallCoordinator && (
+            <div className="core-subsection">
+              <h3 className="core-subtitle">Overall Coordinator</h3>
+              <div className="panel-grid core-oc-grid">
+                <div className="team-card panel-card">
+                  <div className="member-image">
+                    <img src={overallCoordinator.image} alt={overallCoordinator.name} />
+                    <div className="image-overlay"></div>
+                  </div>
+                  <div className="member-info">
+                    <h3>{overallCoordinator.name}</h3>
+                    <p className="member-position">{overallCoordinator.position}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {panelOnlyMembers.length > 0 && (
+            <div className="core-subsection">
+              <h3 className="core-subtitle">Panel Members</h3>
+              <div className="panel-grid">
+                {panelOnlyMembers.map((member, index) => (
+                  <div 
+                    className="team-card panel-card" 
+                    key={index}
+                  >
+                    <div className="member-image">
+                      <img src={member.image} alt={member.name} />
+                      <div className="image-overlay"></div>
+                    </div>
+                    <div className="member-info">
+                      <h3>{member.name}</h3>
+                      <p className="member-position">{member.position}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+      </section>
+
+      <section ref={sectionRefs.verticals} className="verticals-section animate-section">
+        <div className="container">
+          <h2 className="section-title">Coordinators</h2>
+
+          <div className="team-grid">
+            {coordinatorsList.map((member, index) => (
+              <div className="team-card" key={index}>
                 <div className="member-image">
                   <img src={member.image} alt={member.name} />
                   <div className="image-overlay"></div>
@@ -139,65 +204,35 @@ const TeamPage = () => {
                 <div className="member-info">
                   <h3>{member.name}</h3>
                   <p className="member-position">{member.position}</p>
+                  <span className="member-vertical-tag">
+                    {verticalNames[member.verticalKey]}
+                  </span>
                 </div>
               </div>
             ))}
           </div>
-        </div>
-      </section>
 
-      <section ref={sectionRefs.verticals} className="verticals-section animate-section">
-        <div className="container">
-          <h2 className="section-title">Our Verticals</h2>
+          <div className="section-divider"></div>
 
-          {Object.entries(teamData.verticals).map(([key, vertical], verticalIndex) => (
-            <div className="vertical-block" key={key}>
-              <h3 className="vertical-title">{verticalNames[key]}</h3>
-              <div className="vertical-members">
-                <div className="coordinators">
-                  <h4>Coordinators</h4>
-                  <div className="team-grid">
-                    {vertical.coordinators.map((member, index) => (
-                      <div 
-                        className="team-card" 
-                        key={index}
-                      >
-                        <div className="member-image">
-                          <img src={member.image} alt={member.name} />
-                          <div className="image-overlay"></div>
-                        </div>
-                        <div className="member-info">
-                          <h3>{member.name}</h3>
-                          <p className="member-position">{member.position}</p>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
+          <h2 className="section-title section-title-secondary">Executives</h2>
+
+          <div className="executive-grid">
+            {executivesList.map((member, index) => (
+              <div className="team-card executive-card" key={index}>
+                <div className="member-image">
+                  <img src={member.image} alt={member.name} />
+                  <div className="image-overlay"></div>
                 </div>
-
-                <div className="executives">
-                  <h4>Executives</h4>
-                  <div className="executive-grid">
-                    {vertical.executives.map((member, index) => (
-                      <div 
-                        className="team-card executive-card" 
-                        key={index}
-                      >
-                        <div className="member-image">
-                          <img src={member.image} alt={member.name} />
-                          <div className="image-overlay"></div>
-                        </div>
-                        <div className="member-info">
-                          <h3>{member.name}</h3>
-                          <p className="member-position">{member.position}</p>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
+                <div className="member-info">
+                  <h3>{member.name}</h3>
+                  <p className="member-position">{member.position}</p>
+                  <span className="member-vertical-tag">
+                    {verticalNames[member.verticalKey]}
+                  </span>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </section>
     </div>
