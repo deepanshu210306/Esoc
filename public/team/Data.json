@@ -80,5 +80,36 @@
         { "name": "Demira Vashisht", "position": "Executive", "image": "/team/demira-vashisht.jpg" }
       ]
     }
+  },
+  "previousTeam": {
+    "oc": [
+      {
+        "name": "Harsh Kumar Singh",
+        "position": "Overall Coordinator",
+        "image": "/team/Harsh.png"
+      }
+    ],
+    "panelMembers": [
+      {
+        "name": "Sumit Singh",
+        "position": "Panel Member",
+        "image": "/team/Sumit.png"
+      },
+      {
+        "name": "Parth Soni",
+        "position": "Panel Member",
+        "image": "/team/Parth.png"
+      },
+      {
+        "name": "Anuj Prasad",
+        "position": "Panel Member",
+        "image": "/team/Anuj.png"
+      },
+      {
+        "name": "Rhitika Singh",
+        "position": "Panel Member",
+        "image": "/team/Rhitika.png"
+      }
+    ]
   }
 }

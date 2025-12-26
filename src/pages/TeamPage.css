@@ -147,6 +147,136 @@
   background-color: var(--background-light);
 }
 
+/* Previous Team Section */
+.previous-team-section {
+  padding: 2rem 0 1.5rem;
+  background-color: var(--background-white);
+}
+
+.previous-team-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.toggle-container {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.toggle-label {
+  font-size: 0.95rem;
+  color: var(--gray-700);
+  font-weight: 500;
+  user-select: none;
+}
+
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--gray-300);
+  transition: 0.3s;
+  border-radius: 26px;
+}
+
+.toggle-slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.3s;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.toggle-switch input:checked + .toggle-slider {
+  background-color: var(--primary-blue);
+}
+
+.toggle-switch input:checked + .toggle-slider:before {
+  transform: translateX(24px);
+}
+
+.toggle-switch input:focus + .toggle-slider {
+  box-shadow: 0 0 1px var(--primary-blue);
+}
+
+.previous-team-content {
+  display: block;
+  transition: opacity 0.4s ease-out, max-height 0.5s ease-out, margin-top 0.3s ease-out;
+}
+
+.previous-team-content.hidden {
+  opacity: 0;
+  max-height: 0;
+  margin-top: 0;
+  overflow: hidden;
+  pointer-events: none;
+  /* Images will still load because content is in DOM */
+  position: relative;
+}
+
+.previous-team-content.visible {
+  opacity: 1;
+  max-height: 5000px;
+  margin-top: 2rem;
+  overflow: visible;
+  pointer-events: auto;
+  animation: fadeIn 0.4s ease-in;
+}
+
+/* Ensure images have background while loading to prevent white flash */
+.previous-team-content .member-image {
+  background: linear-gradient(135deg, rgba(26, 75, 148, 0.08), rgba(247, 192, 53, 0.08));
+}
+
+.previous-team-content .member-image img {
+  transition: opacity 0.3s ease;
+}
+
+.previous-team-content.hidden .member-image img {
+  opacity: 0;
+}
+
+.previous-team-content.visible .member-image img {
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .panel-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
@@ -255,6 +385,7 @@
   aspect-ratio: 3 / 4;
   overflow: hidden;
   position: relative;
+  background: linear-gradient(135deg, rgba(26, 75, 148, 0.05), rgba(247, 192, 53, 0.05));
 }
 
 .member-image img {
@@ -262,7 +393,7 @@
   height: 100%;
   object-fit: cover;
   object-position: center top;
-  transition: transform 0.4s ease;
+  transition: transform 0.4s ease, opacity 0.3s ease;
 }
 
 .team-card:hover .member-image img {
@@ -459,6 +590,16 @@
   
   .member-position {
     font-size: 0.75rem;
+  }
+
+  .previous-team-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .toggle-container {
+    width: 100%;
+    justify-content: flex-start;
   }
 }
 

@@ -4,11 +4,13 @@ import './TeamPage.css';
 const TeamPage = () => {
   const [teamData, setTeamData] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [showPreviousTeam, setShowPreviousTeam] = useState(false);
 
   const sectionRefs = {
     faculty: useRef(null),
     panel: useRef(null),
-    verticals: useRef(null)
+    verticals: useRef(null),
+    previousTeam: useRef(null)
   };
 
   useEffect(() => {
@@ -233,6 +235,81 @@ const TeamPage = () => {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section ref={sectionRefs.previousTeam} className="previous-team-section animate-section">
+        <div className="container">
+          <div className="previous-team-header">
+            <h2 className="section-title">Previous Team</h2>
+            <div className="toggle-container">
+              <label className="toggle-switch">
+                <input
+                  type="checkbox"
+                  checked={showPreviousTeam}
+                  onChange={(e) => setShowPreviousTeam(e.target.checked)}
+                />
+                <span className="toggle-slider"></span>
+              </label>
+              <span className="toggle-label">
+                {showPreviousTeam ? 'Hide' : 'Show'} Previous Team
+              </span>
+            </div>
+          </div>
+
+          {teamData?.previousTeam && (
+            <div className={`previous-team-content ${showPreviousTeam ? 'visible' : 'hidden'}`}>
+              {teamData.previousTeam.oc && teamData.previousTeam.oc.length > 0 && (
+                <div className="core-subsection">
+                  <h3 className="core-subtitle">Overall Coordinator</h3>
+                  <div className="panel-grid core-oc-grid">
+                    {teamData.previousTeam.oc.map((member, index) => (
+                      <div className="team-card panel-card" key={`prev-oc-${index}`}>
+                        <div className="member-image">
+                          <img 
+                            src={member.image} 
+                            alt={member.name} 
+                            loading="eager"
+                            decoding="async"
+                          />
+                          <div className="image-overlay"></div>
+                        </div>
+                        <div className="member-info">
+                          <h3>{member.name}</h3>
+                          <p className="member-position">{member.position}</p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {teamData.previousTeam.panelMembers && teamData.previousTeam.panelMembers.length > 0 && (
+                <div className="core-subsection">
+                  <h3 className="core-subtitle">Panel Members</h3>
+                  <div className="panel-grid">
+                    {teamData.previousTeam.panelMembers.map((member, index) => (
+                      <div className="team-card panel-card" key={`prev-panel-${index}`}>
+                        <div className="member-image">
+                          <img 
+                            src={member.image} 
+                            alt={member.name} 
+                            loading="eager"
+                            decoding="async"
+                          />
+                          <div className="image-overlay"></div>
+                        </div>
+                        <div className="member-info">
+                          <h3>{member.name}</h3>
+                          <p className="member-position">{member.position}</p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+          )}
         </div>
       </section>
     </div>
