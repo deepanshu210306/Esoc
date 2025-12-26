@@ -11,7 +11,7 @@ const ResourcesPage = () => {
       yearLinks: [
         {
           year: "2022",
-          link: "https://csciitd-my.sharepoint.com/personal/es1230560_iitd_ac_in/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fes1230560%5Fiitd%5Fac%5Fin%2FDocuments%2F23ES1%20Resources%2FSemester%203&ga=1",
+          link: "https://csciitd-my.sharepoint.com/personal/es1221792_iitd_ac_in/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fes1221792%5Fiitd%5Fac%5Fin%2FDocuments%2FShreyans%20Singh%27s%20Acad%20Drive%2Fsem%203&viewid=c6b1c65c%2D0387%2D40d8%2Dbcb0%2D98e146433cd5&ga=1",
           status: "available"
         },
         {
@@ -29,7 +29,7 @@ const ResourcesPage = () => {
       yearLinks: [
         {
           year: "2022",
-          link: "https://csciitd-my.sharepoint.com/personal/es1230560_iitd_ac_in/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fes1230560%5Fiitd%5Fac%5Fin%2FDocuments%2F23ES1%20Resources%2FSemester%204&ga=1",
+          link: "https://csciitd-my.sharepoint.com/personal/es1221792_iitd_ac_in/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fes1221792%5Fiitd%5Fac%5Fin%2FDocuments%2FShreyans%20Singh%27s%20Acad%20Drive%2Fsem%204&viewid=c6b1c65c%2D0387%2D40d8%2Dbcb0%2D98e146433cd5&ga=1",
           status: "available"
         },
         {
@@ -65,7 +65,7 @@ const ResourcesPage = () => {
       yearLinks: [
         {
           year: "2022",
-          link: "https://csciitd-my.sharepoint.com/personal/es1210186_iitd_ac_in/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fes1210186%5Fiitd%5Fac%5Fin%2FDocuments%2FResources%20ES1%2FSEM%206&ga=1",
+          link: "https://csciitd-my.sharepoint.com/personal/es1221792_iitd_ac_in/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fes1221792%5Fiitd%5Fac%5Fin%2FDocuments%2FShreyans%20Singh%27s%20Acad%20Drive%2Fsem%206%281%29&viewid=c6b1c65c%2D0387%2D40d8%2Dbcb0%2D98e146433cd5&ga=1",
           status: "available"
         },
         {
@@ -83,8 +83,8 @@ const ResourcesPage = () => {
       yearLinks: [
         {
           year: "2022",
-          link: "https://csciitd-my.sharepoint.com/personal/es1210186_iitd_ac_in/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fes1210186%5Fiitd%5Fac%5Fin%2FDocuments%2FResources%20ES1%2FSEM%207&ga=1",
-          status: "available"
+          link: "#",
+          status: "coming-soon"
         },
         {
           year: "2023",
