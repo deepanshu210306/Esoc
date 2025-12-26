@@ -49,10 +49,9 @@ const AboutPage = () => {
           <h2 className="section-title">Our History</h2>
           <div className="history-content">
             <p>
-              Founded in 2023, the Energy Society of IIT Delhi began as a small group of passionate students 
-              interested in addressing energy challenges. Over the years, we've grown into a vibrant community 
-              of students, faculty, and industry professionals working together to promote sustainable energy 
-              solutions.
+              Founded in 2023, the Energy Society of IIT Delhi originated from the Energy Forum, IIT Delhi, beginning as a small group of passionate students interested in addressing critical energy challenges.
+
+Over the years, it has grown into a vibrant community of students, faculty, and industry professionals working together to promote sustainable and impactful energy solutions through collaboration, dialogue, and innovation.
             </p>
             <div className="timeline">
               <div className="timeline-item">

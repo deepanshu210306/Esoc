@@ -138,7 +138,7 @@ const TeamPage = () => {
               <h3>{teamData.facultyCoordinator.name}</h3>
               <p className="faculty-position">{teamData.facultyCoordinator.position}</p>
               <p className="faculty-bio">
-                Department of Energy Engineering, IIT Delhi. Leading research in sustainable energy systems and mentoring the next generation of energy professionals.
+                Department of Energy Science and Engineering, IIT Delhi. Leading research in sustainable energy systems and mentoring the next generation of energy professionals.
               </p>
             </div>
           </div>
