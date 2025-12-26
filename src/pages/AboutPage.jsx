@@ -58,7 +58,7 @@ Over the years, it has grown into a vibrant community of students, faculty, and 
                 <div className="timeline-dot"></div>
                 <div className="timeline-content">
                   <h3>2023</h3>
-                  <p>Energy Society originated from Energy Forem IIT Delhi</p>
+                  <p>Energy Society originated from Energy Forum IIT Delhi</p>
                 </div>
               </div>
               <div className="timeline-item">
