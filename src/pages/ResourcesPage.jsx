@@ -11,12 +11,7 @@ const ResourcesPage = () => {
       yearLinks: [
         {
           year: "2022",
-          link: "https://csciitd-my.sharepoint.com/personal/es1221792_iitd_ac_in/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fes1221792%5Fiitd%5Fac%5Fin%2FDocuments%2FShreyans%20Singh%27s%20Acad%20Drive%2Fsem%203&viewid=c6b1c65c%2D0387%2D40d8%2Dbcb0%2D98e146433cd5&ga=1",
-          status: "available"
-        },
-        {
-          year: "2023",
-          link: "https://csciitd-my.sharepoint.com/personal/es1230560_iitd_ac_in/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fes1230560%5Fiitd%5Fac%5Fin%2FDocuments%2F23ES1%20Resources%2FSemester%203&viewid=9d4f2e47%2Ddb36%2D4c57%2D86f2%2D488be72a54a4&ga=1",
+          link:"https://drive.google.com/drive/folders/1KJUqrGoBzuG8WQpaVqZKjOrOAU2ciS1j?usp=sharing",
           status: "available"
         }
       ]
@@ -29,12 +24,7 @@ const ResourcesPage = () => {
       yearLinks: [
         {
           year: "2022",
-          link: "https://csciitd-my.sharepoint.com/personal/es1221792_iitd_ac_in/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fes1221792%5Fiitd%5Fac%5Fin%2FDocuments%2FShreyans%20Singh%27s%20Acad%20Drive%2Fsem%204&viewid=c6b1c65c%2D0387%2D40d8%2Dbcb0%2D98e146433cd5&ga=1",
-          status: "available"
-        },
-        {
-          year: "2023",
-          link: "https://csciitd-my.sharepoint.com/personal/es1230560_iitd_ac_in/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fes1230560%5Fiitd%5Fac%5Fin%2FDocuments%2F23ES1%20Resources%2FSemester%204&viewid=9d4f2e47%2Ddb36%2D4c57%2D86f2%2D488be72a54a4&ga=1",
+         link:"https://drive.google.com/drive/folders/1i0MrAzUYT0_1nNQ9Gjov3rDCCxp3ktsF?usp=sharing",
           status: "available"
         }
       ]
@@ -47,12 +37,7 @@ const ResourcesPage = () => {
       yearLinks: [
         {
           year: "2022",
-          link: "https://csciitd-my.sharepoint.com/personal/es1221792_iitd_ac_in/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fes1221792%5Fiitd%5Fac%5Fin%2FDocuments%2FShreyans%20Singh%27s%20Acad%20Drive%2Fsem%205&ga=1",
-          status: "available"
-        },
-        {
-          year: "2023",
-          link: "https://csciitd-my.sharepoint.com/personal/es1230560_iitd_ac_in/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fes1230560%5Fiitd%5Fac%5Fin%2FDocuments%2F23ES1%20Resources%2FSemester%205&viewid=9d4f2e47%2Ddb36%2D4c57%2D86f2%2D488be72a54a4&ga=1",
+          link:"https://drive.google.com/drive/folders/1-A-SbHBRwJ3UP2FNLDbTnKiYqCk-fhEt?usp=sharing",
           status: "available"
         }
       ]
@@ -65,12 +50,7 @@ const ResourcesPage = () => {
       yearLinks: [
         {
           year: "2022",
-          link: "https://csciitd-my.sharepoint.com/personal/es1221792_iitd_ac_in/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fes1221792%5Fiitd%5Fac%5Fin%2FDocuments%2FShreyans%20Singh%27s%20Acad%20Drive%2Fsem%206%281%29&viewid=c6b1c65c%2D0387%2D40d8%2Dbcb0%2D98e146433cd5&ga=1",
-          status: "available"
-        },
-        {
-          year: "2023",
-          link: "https://csciitd-my.sharepoint.com/personal/es1230560_iitd_ac_in/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fes1230560%5Fiitd%5Fac%5Fin%2FDocuments%2F23ES1%20Resources%2FSemester%206&viewid=9d4f2e47%2Ddb36%2D4c57%2D86f2%2D488be72a54a4&ga=1",
+          link: "https://drive.google.com/drive/folders/1xD4870xQ1QcjxmSoemhdDKPyd12WVER8?usp=sharing",
           status: "available"
         }
       ]
@@ -83,13 +63,8 @@ const ResourcesPage = () => {
       yearLinks: [
         {
           year: "2022",
-          link: "#",
-          status: "coming-soon"
-        },
-        {
-          year: "2023",
-          link: "#",
-          status: "coming-soon"
+          link: "https://drive.google.com/drive/folders/1DYgqsTaGiQ159REab1njxDArBF2T-8GN?usp=sharing",
+          status: "available"
         }
       ]
     },
@@ -99,8 +74,7 @@ const ResourcesPage = () => {
       type: "Resources Drive",
       description: "Capstone, electives and final-year resources",
       yearLinks: [
-        { year: "2022", link: "#", status: "coming-soon" },
-        { year: "2023", link: "#", status: "coming-soon" }
+        { year: "2022", link: "https://drive.google.com/drive/folders/1YnKnm01w3AUGMuUJzqSP4SsmHCCnA4gE?usp=sharing", status: "available" }
       ]
     },
   ];
@@ -147,13 +121,13 @@ const ResourcesPage = () => {
                         target={yearItem.status === "coming-soon" ? "_self" : "_blank"}
                         rel="noreferrer"
                       >
-                        <span className="year-pill__year">{yearItem.year}</span>
+                        {/* <span className="year-pill__year">{yearItem.year}</span> */}
                         <span className="year-pill__cta">
                           {yearItem.status === "coming-soon" ? "Coming soon" : "View resources"}
                         </span>
                       </a>
                     ))}
-                  </div>
+                  </div>   
                 </div>
               </div>
             ))}
