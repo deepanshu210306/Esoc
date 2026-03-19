@@ -50,6 +50,15 @@ const EventsPage = () => {
       description: "Welcoming fresh sparks to Energy Engineering—fun, friendships, and the start of an electrifying journey!",
       link: "https://www.instagram.com/p/DPRhegyk6I5/?img_index=1"
     },
+    {
+      id: 6,
+      title: "DYSON SPHERES",
+      date: "Mar 10, 2025",
+      location: "LH 316",
+      image: "/events/dyson_spheres.png",
+      description: "Dyson Spheres, the highly anticipated quiz on energy and sustainability as part of Tryst IITD Day-1 Events, concluded successfully with a collaborative effort between Energy Society and QC IITD. The two-round quiz by Rishit and Utsab challenged participants with a signature Quizzing Club twist, making it enlightening and fun.",
+      link: "https://www.instagram.com/p/DHk3j1VM694/?igsh=MTNneG5jeDdwb2NxMw=="
+    },
   ];
 
   return (
