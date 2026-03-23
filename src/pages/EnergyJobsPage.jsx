@@ -3,12 +3,14 @@ import './EnergyJobsPage.css';
 
 const EnergyJobsPage = () => {
   const [jobs] = useState([
+    // --- PLACEMENTS ---
     {
       id: 1,
       title: "Graduate Engineer Trainee - Heavy Engineering",
       company: "ISGEC Heavy Engineering",
       location: "On-site",
       type: "Full-time",
+      placementType: "placement",
       category: "Heavy Engineering",
       experience: "Entry Level",
       salary: "₹5,00,000 - ₹8,00,000/year",
@@ -26,6 +28,7 @@ const EnergyJobsPage = () => {
       company: "Bajaj Auto / Chetak Ltd",
       location: "On-site",
       type: "Full-time",
+      placementType: "placement",
       category: "Electronics Engineering",
       experience: "Entry Level",
       salary: "₹6,00,000 - ₹9,00,000/year",
@@ -43,6 +46,7 @@ const EnergyJobsPage = () => {
       company: "Hero Future Energies",
       location: "Hybrid",
       type: "Full-time",
+      placementType: "placement",
       category: "Solar Energy",
       experience: "Entry Level",
       salary: "₹6,50,000 - ₹10,00,000/year",
@@ -60,6 +64,7 @@ const EnergyJobsPage = () => {
       company: "SLnko Energy",
       location: "Remote/On-site",
       type: "Full-time",
+      placementType: "placement",
       category: "Electrical Engineering",
       experience: "Entry Level",
       salary: "₹5,50,000 - ₹8,50,000/year",
@@ -77,6 +82,7 @@ const EnergyJobsPage = () => {
       company: "Sharang Shakti Private Limited",
       location: "On-site",
       type: "Full-time",
+      placementType: "placement",
       category: "Control Systems",
       experience: "Entry Level",
       salary: "₹6,00,000 - ₹10,00,000/year",
@@ -94,6 +100,7 @@ const EnergyJobsPage = () => {
       company: "HexaClimate",
       location: "Hybrid",
       type: "Full-time",
+      placementType: "placement",
       category: "Sustainability Engineering",
       experience: "Entry Level",
       salary: "₹5,50,000 - ₹8,50,000/year",
@@ -111,6 +118,7 @@ const EnergyJobsPage = () => {
       company: "Shinmei Industry",
       location: "On-site",
       type: "Full-time",
+      placementType: "placement",
       category: "Electrical Design",
       experience: "Entry Level",
       salary: "₹6,00,000 - ₹9,50,000/year",
@@ -121,38 +129,129 @@ const EnergyJobsPage = () => {
       tags: ["Electrical CAD", "SLD", "Design Review", "Compliance"],
       posted: "7 days ago",
       datePosted: new Date(Date.now() - 7 * 24 * 60 * 60 * 1000)
+    },
+
+    // --- INTERNS ---
+    {
+      id: 8,
+      title: "Foreign Research Intern",
+      company: "KTH Sweden",
+      location: "On-site / Remote",
+      type: "Internship",
+      placementType: "intern",
+      category: "Research",
+      experience: "Intern",
+      salary: "Stipend",
+      salaryNum: 0,
+      description: "Foreign research internship focusing on advanced engineering and technology systems at KTH Royal Institute of Technology, Sweden.",
+      alumni: "Shashank (2027 passout)",
+      linkedin: "",
+      tags: ["Research", "Foreign Internship", "KTH"],
+      posted: "Recently",
+      datePosted: new Date(Date.now() - 1 * 24 * 60 * 60 * 1000)
+    },
+    {
+      id: 9,
+      title: "Foreign Research Intern",
+      company: "EPFL Switzerland",
+      location: "On-site / Remote",
+      type: "Internship",
+      placementType: "intern",
+      category: "Research",
+      experience: "Intern",
+      salary: "Stipend",
+      salaryNum: 0,
+      description: "Foreign research internship at EPFL Switzerland contributing to cutting-edge scientific and engineering research.",
+      alumni: "Chahak Shah (2027 passout)",
+      linkedin: "https://www.linkedin.com/in/chahak-shah/",
+      tags: ["Research", "Foreign Internship", "EPFL"],
+      posted: "Recently",
+      datePosted: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000)
+    },
+    {
+      id: 10,
+      title: "Intern",
+      company: "HexaClimate",
+      location: "Hybrid",
+      type: "Internship",
+      placementType: "intern",
+      category: "Sustainability Engineering",
+      experience: "Intern",
+      salary: "Stipend",
+      salaryNum: 0,
+      description: "Internship focused on climate-tech, energy efficiency solutions, and sustainability modeling.",
+      alumni: "Ashutosh Raj (2027 passout)",
+      linkedin: "https://www.linkedin.com/in/ashutosh-raj-431a2b280/",
+      tags: ["Sustainability", "Climate-Tech", "Internship"],
+      posted: "Recently",
+      datePosted: new Date(Date.now() - 3 * 24 * 60 * 60 * 1000)
+    },
+    {
+      id: 11,
+      title: "Intern",
+      company: "HexaClimate",
+      location: "Hybrid",
+      type: "Internship",
+      placementType: "intern",
+      category: "Sustainability Engineering",
+      experience: "Intern",
+      salary: "Stipend",
+      salaryNum: 0,
+      description: "Internship focused on climate-tech, energy efficiency solutions, and sustainability modeling.",
+      alumni: "Sarthak Garg (2027 passout)",
+      linkedin: "https://www.linkedin.com/in/sarthakgarg05/",
+      tags: ["Sustainability", "Climate-Tech", "Internship"],
+      posted: "Recently",
+      datePosted: new Date(Date.now() - 4 * 24 * 60 * 60 * 1000)
+    },
+    {
+      id: 12,
+      title: "Intern",
+      company: "Battery Smart",
+      location: "Hybrid",
+      type: "Internship",
+      placementType: "intern",
+      category: "EV / Battery Tech",
+      experience: "Intern",
+      salary: "Stipend",
+      salaryNum: 0,
+      description: "Working on battery swapping networks and electric vehicle ecosystem operational support and data analysis.",
+      alumni: "Disha Singla (2027 passout)",
+      linkedin: "https://www.linkedin.com/in/disha-singla-84373428b/",
+      tags: ["EV", "Battery Tech", "Operations"],
+      posted: "Recently",
+      datePosted: new Date(Date.now() - 5 * 24 * 60 * 60 * 1000)
     }
   ]);
 
-  const [filteredJobs, setFilteredJobs] = useState(jobs);
-  const [currentPage, setCurrentPage] = useState(1);
+  // Use "placement" or "intern" as the active tab state
+  const [activeTab, setActiveTab] = useState('placement');
+  const [filteredJobs, setFilteredJobs] = useState([]);
+  
+  // Existing filter states (kept in case you add search bars later)
   const [searchTerm, setSearchTerm] = useState('');
-  const [typeFilter, setTypeFilter] = useState('');
   const [locationFilter, setLocationFilter] = useState('');
   const [experienceFilter, setExperienceFilter] = useState('');
   const [categoryFilter, setCategoryFilter] = useState('');
   const [sortBy, setSortBy] = useState('recent');
 
-  const jobsPerPage = 6;
-
-  const getCompanyInitials = (company) => {
-    return company.split(' ').map(word => word[0]).join('').substring(0, 2).toUpperCase();
-  };
-
   const filterJobs = () => {
     const filtered = jobs.filter(job => {
+      // First, filter by the active Tab (Placement vs Intern)
+      if (job.placementType !== activeTab) return false;
+
+      // Then apply other optional filters
       const matchesSearch = !searchTerm ||
         job.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
         job.company.toLowerCase().includes(searchTerm.toLowerCase()) ||
         job.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
         job.tags.some(tag => tag.toLowerCase().includes(searchTerm.toLowerCase()));
 
-      const matchesType = !typeFilter || job.type === typeFilter;
       const matchesLocation = !locationFilter || job.location === locationFilter;
       const matchesExperience = !experienceFilter || job.experience === experienceFilter;
       const matchesCategory = !categoryFilter || job.category === categoryFilter;
 
-      return matchesSearch && matchesType && matchesLocation && matchesExperience && matchesCategory;
+      return matchesSearch && matchesLocation && matchesExperience && matchesCategory;
     });
 
     // Sort jobs
@@ -172,168 +271,58 @@ const EnergyJobsPage = () => {
     });
 
     setFilteredJobs(sorted);
-    setCurrentPage(1);
   };
 
+  // Re-run the filter whenever the tab or any other criteria changes
   useEffect(() => {
     filterJobs();
-  }, [searchTerm, typeFilter, locationFilter, experienceFilter, categoryFilter, sortBy]);
-
-  const totalPages = Math.ceil(filteredJobs.length / jobsPerPage);
-  const startIdx = (currentPage - 1) * jobsPerPage;
-  const endIdx = startIdx + jobsPerPage;
-  const jobsToShow = filteredJobs.slice(startIdx, endIdx);
-
-  const changePage = (page) => {
-    setCurrentPage(page);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
-  const viewJob = (jobId) => {
-    const job = jobs.find(j => j.id === jobId);
-    alert(`Viewing job: ${job.title}\n\nCompany: ${job.company}\nLocation: ${job.location}\nSalary: ${job.salary}\n\nThis would open a detailed job view page with:\n- Full job description\n- Requirements & qualifications\n- Benefits & perks\n- Application form\n\nClick "Apply Now" to submit your application!`);
-  };
-
-  const renderPagination = () => {
-    if (totalPages <= 1) return null;
-
-    const pages = [];
-    if (currentPage > 1) {
-      pages.push(
-        <button key="prev" className="page-btn" onClick={() => changePage(currentPage - 1)}>
-          ← Prev
-        </button>
-      );
-    }
-
-    for (let i = 1; i <= totalPages; i++) {
-      if (i === 1 || i === totalPages || (i >= currentPage - 1 && i <= currentPage + 1)) {
-        pages.push(
-          <button
-            key={i}
-            className={`page-btn ${i === currentPage ? 'active' : ''}`}
-            onClick={() => changePage(i)}
-          >
-            {i}
-          </button>
-        );
-      } else if (i === currentPage - 2 || i === currentPage + 2) {
-        pages.push(<span key={i} className="page-btn">...</span>);
-      }
-    }
-
-    if (currentPage < totalPages) {
-      pages.push(
-        <button key="next" className="page-btn" onClick={() => changePage(currentPage + 1)}>
-          Next →
-        </button>
-      );
-    }
-
-    return pages;
-  };
+  }, [activeTab, searchTerm, locationFilter, experienceFilter, categoryFilter, sortBy]);
 
   return (
     <div className="energy-jobs-page">
-      <div className="container">
-        <div className="filters-section">
-          <div className="search-bar">
-            <input
-              type="search"
-              className="search-input"
-              placeholder="Search jobs by title, company, or keywords..."
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-            />
-          </div>
-          <div className="filters-grid">
-            <div className="filter-group">
-              <label htmlFor="typeFilter">Job Type</label>
-              <select
-                id="typeFilter"
-                value={typeFilter}
-                onChange={(e) => setTypeFilter(e.target.value)}
-              >
-                <option value="">All Types</option>
-                <option value="Full-time">Full-time</option>
-                <option value="Part-time">Part-time</option>
-                <option value="Contract">Contract</option>
-                <option value="Internship">Internship</option>
-              </select>
-            </div>
-            <div className="filter-group">
-              <label htmlFor="locationFilter">Location</label>
-              <select
-                id="locationFilter"
-                value={locationFilter}
-                onChange={(e) => setLocationFilter(e.target.value)}
-              >
-                <option value="">All Locations</option>
-                <option value="Remote">Remote</option>
-                <option value="Hybrid">Hybrid</option>
-                <option value="On-site">On-site</option>
-              </select>
-            </div>
-            <div className="filter-group">
-              <label htmlFor="experienceFilter">Experience</label>
-              <select
-                id="experienceFilter"
-                value={experienceFilter}
-                onChange={(e) => setExperienceFilter(e.target.value)}
-              >
-                <option value="">All Levels</option>
-                <option value="Entry Level">Entry Level</option>
-                <option value="Mid Level">Mid Level</option>
-                <option value="Senior Level">Senior Level</option>
-              </select>
-            </div>
-            <div className="filter-group">
-              <label htmlFor="categoryFilter">Specialization</label>
-              <select
-                id="categoryFilter"
-                value={categoryFilter}
-                onChange={(e) => setCategoryFilter(e.target.value)}
-              >
-                <option value="">All Specializations</option>
-                <option value="Solar Energy">Solar Energy</option>
-                <option value="Wind Energy">Wind Energy</option>
-                <option value="Power Systems">Power Systems</option>
-                <option value="Energy Storage">Energy Storage</option>
-                <option value="Grid Integration">Grid Integration</option>
-                <option value="Nuclear Energy">Nuclear Energy</option>
-                <option value="Hydropower">Hydropower</option>
-              </select>
-            </div>
-          </div>
+      <div className="page-header jobs-header">
+        <div className="container">
+          <h1 className="page-title">Our <span>Alumni</span></h1>
+          <p className="page-subtitle">
+            Connect with alumni working in the energy sector. Explore career opportunities and learn from their experiences 
+            as they share insights about their professional journeys and growth in the energy industry.
+          </p>
         </div>
+        
+        <div className="floating-shapes">
+          <div className="shape shape-1"></div>
+          <div className="shape shape-2"></div>
+          <div className="shape shape-3"></div>
+          <div className="shape shape-4"></div>
+        </div>
+      </div>
 
-        <div className="stats-bar">
-          <div className="job-count">
-            Showing {filteredJobs.length} job{filteredJobs.length !== 1 ? 's' : ''}
-          </div>
-          <div className="sort-controls">
-            <label htmlFor="sortBy">Sort by:</label>
-            <select
-              id="sortBy"
-              value={sortBy}
-              onChange={(e) => setSortBy(e.target.value)}
-            >
-              <option value="recent">Most Recent</option>
-              <option value="salary-high">Salary: High to Low</option>
-              <option value="salary-low">Salary: Low to High</option>
-              <option value="title">Title: A-Z</option>
-            </select>
-          </div>
+      <div className="container">
+        
+        {/* NEW TOGGLE BUTTONS */}
+        <div className="type-toggle-container">
+          <button 
+            className={`type-toggle-btn ${activeTab === 'placement' ? 'active' : ''}`}
+            onClick={() => setActiveTab('placement')}
+          >
+            Placements
+          </button>
+          <button 
+            className={`type-toggle-btn ${activeTab === 'intern' ? 'active' : ''}`}
+            onClick={() => setActiveTab('intern')}
+          >
+            Interns
+          </button>
         </div>
 
         <div className="jobs-grid">
-          {jobsToShow.length === 0 ? (
+          {filteredJobs.length === 0 ? (
             <div className="no-jobs">
-              <h3>No jobs found</h3>
-              <p>Try adjusting your filters or search terms</p>
+              <h3>No alumni found</h3>
+              <p>Check back soon for more alumni profiles</p>
             </div>
           ) : (
-            jobsToShow.map(job => (
+            filteredJobs.map(job => (
               <div key={job.id} className="job-card">
                 <div className="job-header">
                   <div className="job-title-section">
@@ -352,10 +341,6 @@ const EnergyJobsPage = () => {
               </div>
             ))
           )}
-        </div>
-
-        <div className="pagination">
-          {renderPagination()}
         </div>
       </div>
     </div>

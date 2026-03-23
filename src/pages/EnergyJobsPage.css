@@ -1,8 +1,10 @@
 .energy-jobs-page {
-  padding: 100px 0 40px;
+  padding: 0;
 }
 
-.container {
+.energy-jobs-page > .container {
+  padding-top: 40px;
+  padding-bottom: 40px;
   max-width: 1400px;
   margin: 0 auto;
   padding: 20px;
@@ -27,6 +29,7 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
+  position: relative;
 }
 
 label {
@@ -59,10 +62,6 @@ select:focus {
   box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.15);
 }
 
-.filter-group {
-  position: relative;
-}
-
 .filter-group::after {
   content: "\25BC";
   position: absolute;
@@ -72,12 +71,6 @@ select:focus {
   pointer-events: none;
   color: var(--color-text-secondary);
   font-size: 10px;
-}
-
-input:focus,
-select:focus {
-  outline: none;
-  border-color: var(--color-primary);
 }
 
 .search-bar {
@@ -110,6 +103,43 @@ select:focus {
   align-items: center;
 }
 
+/* =========================================
+   NEW: INTERN VS PLACEMENT TOGGLE STYLES 
+   ========================================= */
+.type-toggle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.type-toggle-btn {
+  background: #ffffff;
+  color: #1a4b94;
+  border: 2px solid #1a4b94;
+  padding: 12px 32px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.type-toggle-btn:hover {
+  background-color: #f0f7ff;
+  transform: translateY(-2px);
+}
+
+.type-toggle-btn.active {
+  background-color: #1a4b94;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(26, 75, 148, 0.25);
+}
+/* ========================================= */
+
 .jobs-grid {
   display: grid;
   gap: 20px;
@@ -123,12 +153,6 @@ select:focus {
   transition: all 0.3s;
   cursor: pointer;
   color: var(--color-text-primary);
-}
-
-.job-card:hover {
-  border-color: var(--color-primary);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
 }
 
 .job-card:hover {
@@ -271,31 +295,43 @@ select:focus {
   margin-bottom: 16px;
 }
 
-.pagination {
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-  margin-top: 32px;
+/* Pagination Styles (Kept as requested in case needed elsewhere) */
+.energy-jobs-page .pagination {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 12px !important;
+  margin: 40px auto !important;
+  width: 100% !important;
 }
 
-.page-btn {
-  padding: 8px 14px;
-  border: 1px solid var(--color-border);
-  background: var(--color-bg-surface);
-  color: var(--color-text-primary);
-  border-radius: 6px;
-  cursor: pointer;
-  transition: all 0.2s;
+.energy-jobs-page .pagination .page-btn,
+.energy-jobs-page .pagination button,
+.energy-jobs-page .pagination a {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  color: #1a4b94 !important;
+  border: 1px solid #1a4b94 !important;
+  padding: 10px 20px !important;
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+  display: inline-flex !important;
+  box-shadow: none !important;
+  background-image: none !important;
 }
 
-.page-btn:hover {
-  background: var(--color-bg-muted);
+.energy-jobs-page .pagination .page-btn.active {
+  background-color: #1a4b94 !important;
+  color: #ffffff !important;
 }
 
-.page-btn.active {
-  background: var(--color-primary);
-  color: white;
-  border-color: var(--color-primary);
+.energy-jobs-page .pagination .page-btn * {
+  color: inherit !important;
+}
+
+.energy-jobs-page .pagination .page-btn:hover:not(.active) {
+  background-color: #f0f7ff !important;
 }
 
 @media (max-width: 768px) {
@@ -314,5 +350,18 @@ select:focus {
   .stats-bar {
     flex-direction: column;
     align-items: flex-start;
+  }
+  
+  /* Make toggle buttons fit on small screens */
+  .type-toggle-container {
+    flex-direction: row;
+    width: 100%;
+  }
+  
+  .type-toggle-btn {
+    flex: 1;
+    text-align: center;
+    padding: 10px 16px;
+    font-size: 14px;
   }
 }
