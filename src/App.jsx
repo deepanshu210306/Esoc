@@ -6,6 +6,7 @@ import EventsPage from './pages/EventsPage';
 import ResourcesPage from './pages/ResourcesPage';
 import AboutPage from './pages/AboutPage';
 import EnergyJobsPage from './pages/EnergyJobsPage';
+import EnergyToolsPage from './pages/EnergyToolsPage';
 import ContactPage from './pages/ContactPage';
 
 function App() {
@@ -13,12 +14,13 @@ function App() {
     <Routes>
       <Route path="/" element={<Index />}>
         <Route index element={<HomePage />} />
-        <Route path="/team" element={<TeamPage />} />
-        <Route path="/events" element={<EventsPage />} />
-        <Route path="/resources" element={<ResourcesPage />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/jobs" element={<EnergyJobsPage />} />
-        <Route path="/contact" element={<ContactPage />} />
+        <Route path="team" element={<TeamPage />} />
+        <Route path="events" element={<EventsPage />} />
+        <Route path="resources" element={<ResourcesPage />} />
+        <Route path="about" element={<AboutPage />} />
+        <Route path="jobs" element={<EnergyJobsPage />} />
+        <Route path="energy-tools" element={<EnergyToolsPage />} />
+        <Route path="contact" element={<ContactPage />} />
       </Route>
     </Routes>
   );
