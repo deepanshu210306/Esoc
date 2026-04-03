@@ -207,6 +207,25 @@ const EnergyJobsPage = () => {
     {
       id: 12,
       title: "Intern",
+      company: "Energia",
+      location: "New Delhi",
+      type: "Internship",
+      placementType: "intern",
+      category: "Energy analyst",
+      experience: "Intern",
+      salary: "Stipend",
+      salaryNum: 0,
+      description: "Energy and data analysis.",
+      alumni: "Maahi (2027 passout)",
+      linkedin: "https://www.linkedin.com/in/maahi-gupta-62a197280/",
+      tags: ["Energy", "Analyst"],
+      posted: "Recently",
+      datePosted: new Date(Date.now() - 5 * 24 * 60 * 60 * 1000)
+      
+    },
+    {
+      id: 13,
+      title: "Intern",
       company: "Battery Smart",
       location: "Hybrid",
       type: "Internship",

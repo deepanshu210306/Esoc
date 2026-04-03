@@ -8,6 +8,7 @@ const HomePage = () => {
       <Hero />
       <HomeSections />
       <FAQSection />
+      {/* <h1>Test</h1> */}
     </>
   );
 };

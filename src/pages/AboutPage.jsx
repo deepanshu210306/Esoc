@@ -8,9 +8,10 @@ const AboutPage = () => {
         <div className="container">
           <h1 className="page-title">About <span>Us</span></h1>
           <p className="page-subtitle">
-            Energy Society at IIT Delhi is a student-led organization dedicated to promoting awareness,
-            innovation, and action in the field of energy. We aim to bridge the gap between academia,
-            industry, and policy to create a sustainable energy future.
+            Energy Society at IIT Delhi is a student-led initiative focused on advancing knowledge, innovation, 
+            and real-world application in the energy sector. We aim to bridge the gap between academia, industry, 
+            and policy by creating platforms for learning, collaboration, and impactful action.
+
           </p>
         </div>
         
@@ -28,8 +29,9 @@ const AboutPage = () => {
             <div className="mission-text">
               <h2 className="section-title">Our Mission</h2>
               <p>
-                To foster a community of energy enthusiasts who collaborate to address the pressing energy
-                challenges of our time through education, research, and outreach activities.
+                To build a community of energy-driven students and professionals who collaborate to address real-world 
+                energy challenges through technical learning, interdisciplinary projects, and industry engagement.
+
               </p>
               {/* <h2 className="section-title">Our Vision</h2>
               <p>
@@ -49,30 +51,29 @@ const AboutPage = () => {
           <h2 className="section-title">Our History</h2>
           <div className="history-content">
             <p>
-              Founded in 2023, the Energy Society of IIT Delhi originated from the Energy Forum, IIT Delhi, beginning as a small group of passionate students interested in addressing critical energy challenges.
-
-Over the years, it has grown into a vibrant community of students, faculty, and industry professionals working together to promote sustainable and impactful energy solutions through collaboration, dialogue, and innovation.
+              Founded in 2023, the Energy Society at IIT Delhi evolved from the Energy Forum into a structured platform for students passionate about energy systems and sustainability. What began as a small initiative 
+              has grown into an active community driving discussions, collaborations, and projects across technical, policy, and industrial domains.
             </p>
             <div className="timeline">
               <div className="timeline-item">
                 <div className="timeline-dot"></div>
                 <div className="timeline-content">
                   <h3>2023</h3>
-                  <p>Energy Society originated from Energy Forum IIT Delhi</p>
+                  <p>Originated from the Energy Forum at IIT Delhi, bringing together students interested in energy and sustainability.</p>
                 </div>
               </div>
               <div className="timeline-item">
                 <div className="timeline-dot"></div>
                 <div className="timeline-content">
                   <h3>2024</h3>
-                  <p>Launched Guest lectures with many Industry leaders</p>
+                  <p>Organized guest lectures and engagements with industry leaders, expanding outreach and learning opportunities.</p>
                 </div>
               </div>
               <div className="timeline-item">
                 <div className="timeline-dot"></div>
                 <div className="timeline-content">
                   <h3>2025</h3>
-                  <p>Collaboration with Intellismart and Official Launch of the website</p>
+                  <p>Collaborated with Intellismart and launched the official Energy Society website to broaden impact and accessibility.</p>
                 </div>
               </div>
 

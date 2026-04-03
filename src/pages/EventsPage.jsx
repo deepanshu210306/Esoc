@@ -6,19 +6,11 @@ const EventsPage = () => {
   const upcomingEvents = [
     {
       id: 1,
-      title: "IntelliSmart Collaboration",
+      title: "Department Dinner 2026",
       date: "Date to be decided",
       location: "Venue to be decided",
       image: "/events/upcoming.jpg",
-      description: "Stay tuned for our upcoming collaboration event with IntelliSmart. Details will be updated soon."
-    },
-    {
-      id: 2,
-      title: "Energy Hackathon – Tryst 2026",
-      date: "During Tryst 2026",
-      location: "IIT Delhi",
-      image: "/events/upcoming.jpg",
-      description: "An intense energy-focused hackathon as part of Tryst 2026. More details coming soon."
+      description: "The annual Department Dinner brings together students, faculty, and alumni for an evening of celebration, networking, and memories. With awards, performances, and heartfelt moments, it’s a perfect way to unwind and strengthen the Energy Engineering community."
     },
   ];
 
@@ -50,15 +42,7 @@ const EventsPage = () => {
       description: "Welcoming fresh sparks to Energy Engineering—fun, friendships, and the start of an electrifying journey!",
       link: "https://www.instagram.com/p/DPRhegyk6I5/?img_index=1"
     },
-    {
-      id: 6,
-      title: "DYSON SPHERES",
-      date: "Mar 10, 2025",
-      location: "LH 316",
-      image: "/events/dyson_spheres.png",
-      description: "Dyson Spheres, the highly anticipated quiz on energy and sustainability as part of Tryst IITD Day-1 Events, concluded successfully with a collaborative effort between Energy Society and QC IITD. The two-round quiz by Rishit and Utsab challenged participants with a signature Quizzing Club twist, making it enlightening and fun.",
-      link: "https://www.instagram.com/p/DHk3j1VM694/?igsh=MTNneG5jeDdwb2NxMw=="
-    },
+    
   ];
 
   return (
