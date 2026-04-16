@@ -53,6 +53,7 @@ const AboutPage = () => {
             <p>
               Founded in 2023, the Energy Society at IIT Delhi evolved from the Energy Forum into a structured platform for students passionate about energy systems and sustainability. What began as a small initiative 
               has grown into an active community driving discussions, collaborations, and projects across technical, policy, and industrial domains.
+              We take pride to be the first Centre for Energy Studies in the country in 1976, that was initiated as a mission to preach energy conservation in different sectors.
             </p>
             <div className="timeline">
               <div className="timeline-item">
@@ -74,6 +75,87 @@ const AboutPage = () => {
                 <div className="timeline-content">
                   <h3>2025</h3>
                   <p>Collaborated with Intellismart and launched the official Energy Society website to broaden impact and accessibility.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="history-section">
+        <div className="container">
+          <h2 className="section-title">Faculty Mentors</h2>
+
+          <div className="history-content">
+            <p>
+              The Energy Forum and later Energy Society have been guided by faculty mentors over the years:
+            </p>
+
+            <div className="timeline faculty-timeline">
+
+              {/* Energy Forum */}
+              <div className="timeline-item">
+                <div className="timeline-dot timeline-dot-main"></div>
+                <div className="timeline-content">
+                  <h3>1976 — Energy Forum</h3>
+                </div>
+              </div>
+
+              <div className="timeline-item">
+                <div className="timeline-dot"></div>
+                <div className="timeline-content">
+                  <p>Prof. S N Garg</p>
+                </div>
+              </div>
+
+              <div className="timeline-item">
+                <div className="timeline-dot"></div>
+                <div className="timeline-content">
+                  <p>Prof. Sandeep Pathak</p>
+                </div>
+              </div>
+
+              <div className="timeline-item">
+                <div className="timeline-dot"></div>
+                <div className="timeline-content">
+                  <p>Prof. Dibakar Rakshit</p>
+                </div>
+              </div>
+
+              <div className="timeline-item">
+                <div className="timeline-dot"></div>
+                <div className="timeline-content">
+                  <p>Prof. S K Tyagi</p>
+                </div>
+              </div>
+
+              <div className="timeline-item">
+                <div className="timeline-dot"></div>
+                <div className="timeline-content">
+                  <p>Prof. L M Das</p>
+                </div>
+              </div>
+
+              {/* Energy Society */}
+              <div className="timeline-item">
+                <div className="timeline-dot timeline-dot-main"></div>
+                <div className="timeline-content">
+                  <h3>2013 — Energy Society</h3>
+                </div>
+              </div>
+
+              <div className="timeline-item">
+                <div className="timeline-dot"></div>
+                <div className="timeline-content">
+                  <p>Prof. Kaushik Saha</p>
+                </div>
+              </div>
+
+              <div className="timeline-item">
+                <div className="timeline-dot"></div>
+                <div className="timeline-content">
+                  <p>Prof. Ramesh Narayanan <i>(jointly)</i></p>
                 </div>
               </div>
 
