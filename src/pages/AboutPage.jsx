@@ -112,14 +112,21 @@ const AboutPage = () => {
               <div className="timeline-item">
                 <div className="timeline-dot"></div>
                 <div className="timeline-content">
-                  <p>Prof. Sandeep Pathak</p>
+                  <p>Prof. L M Das</p>
                 </div>
               </div>
 
               <div className="timeline-item">
                 <div className="timeline-dot"></div>
                 <div className="timeline-content">
-                  <p>Prof. Dibakar Rakshit</p>
+                  <p>Prof. Ashu Verma</p>
+                </div>
+              </div>
+
+              <div className="timeline-item">
+                <div className="timeline-dot"></div>
+                <div className="timeline-content">
+                  <p>Prof. Sandeep Pathak</p>
                 </div>
               </div>
 
@@ -133,7 +140,7 @@ const AboutPage = () => {
               <div className="timeline-item">
                 <div className="timeline-dot"></div>
                 <div className="timeline-content">
-                  <p>Prof. L M Das</p>
+                  <p>Prof. Dibakar Rakshit</p>
                 </div>
               </div>
 
@@ -148,14 +155,14 @@ const AboutPage = () => {
               <div className="timeline-item">
                 <div className="timeline-dot"></div>
                 <div className="timeline-content">
-                  <p>Prof. Kaushik Saha</p>
+                  <p>Prof. Dibakar Rakshit</p>
                 </div>
               </div>
 
               <div className="timeline-item">
                 <div className="timeline-dot"></div>
                 <div className="timeline-content">
-                  <p>Prof. Ramesh Narayanan <i>(jointly)</i></p>
+                  <p>Prof. Kaushik Saha</p>
                 </div>
               </div>
 
