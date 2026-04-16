@@ -141,7 +141,7 @@ const AboutPage = () => {
               <div className="timeline-item">
                 <div className="timeline-dot timeline-dot-main"></div>
                 <div className="timeline-content">
-                  <h3>2013 — Energy Society</h3>
+                  <h3>2023 — Energy Society</h3>
                 </div>
               </div>
 
