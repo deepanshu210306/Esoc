@@ -152,55 +152,29 @@
   }
 }
 
-/* Center the whole faculty timeline */
 .faculty-timeline {
-  max-width: 600px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
-/* Reduce vertical spacing between items */
 .faculty-timeline .timeline-item {
-  margin-bottom: 10px;   /* smaller gap */
+  margin-bottom: 10px;   
 }
 
-/* Even tighter spacing for professor entries */
 .faculty-timeline .timeline-item p {
   margin: 0;
 }
 
-/* Reduce gap between dot and text */
 .faculty-timeline .timeline-content {
   padding-bottom: 4px;
 }
 
-/* Make headings (1976, 2013) stand out slightly */
 .faculty-timeline h3 {
   margin-bottom: 6px;
 }
 
-/* OPTIONAL: slightly indent professor names under heading */
 .faculty-timeline .timeline-item p {
   margin-left: 10px;
-}
-
-.timeline.faculty-timeline::before {
-  left: calc(50% - 180px);   /* adjust this number */
-}
-
-.faculty-timeline .timeline-item {
-  display: flex;
-  justify-content: center;  /* keeps timeline centered */
-}
-
-.faculty-timeline .timeline-content {
-  position: relative;
-  left: 20px;      /* shift text right of centered line */
-  width: 360px;
-  text-align: left;
-}
-
-.faculty-timeline .timeline-dot {
-  left: calc(50% - 180px - 8px); 
 }
 
 .faculty-timeline .timeline-item:has(h3) .timeline-dot {
