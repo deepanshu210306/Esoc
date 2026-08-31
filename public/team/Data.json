@@ -6,109 +6,109 @@
   },
   "panelMembers": [
     {
-      "name": "Rhythm Shah",
+      "name": "Deepanshu",
       "position": "Overall Coordinator",
-      "image": "/team/rhythm-shah.jpg"
+      "image": "/team/Deepanshu.jpg"
     },
     {
-      "name": "Shreyans Singh",
+      "name": "Mitashi Jain",
       "position": "Panel Member",
-      "image": "/team/shreyans-singh.webp"
-    },
-   
-    {
-      "name": "Divyansh Singh Narwaria",
-      "position": "Panel Member",
-      "image": "/team/divyansh-singh-narwaria.webp"
+      "image": "/team/Mitashi Jain.jpeg"
     },
     {
-      "name": "Thakur abhay veer singh",
+      "name": "Dhruv Chourasia",
       "position": "Panel Member",
-      "image": "/team/Thakurabhayveersingh.png"
-    },
-     {
-      "name": "Dhruv Jain",
-      "position": "Panel Member",
-      "image": "/team/dhruv-jain.jpg"
+      "image": "/team/Dhruv Chourasia.jpg"
     }
   ],
   "verticals": {
     "designOps": {
       "coordinators": [
-        { "name": "Deepanshu", "position": "Coordinator", "image": "/team/deepanshu.jpg" },
-        { "name": "Sanidhya Bhupesh", "position": "Coordinator", "image": "/team/sanidhya-bhupesh.jpg" }
+        { "name": "Sayantan Roy", "position": "Coordinator", "image": "/team/Sayantan Roy.jpg" },
+        { "name": "Vedant Kumar", "position": "Coordinator", "image": "/team/Vedant Kumar.jpg" }
       ],
       "executives": [
-        { "name": "Sayantan Roy", "position": "Executive", "image": "/team/sayantan-roy.jpg" },
-        { "name": "Vedant Kumar", "position": "Executive", "image": "/team/vedant-kumar.webp" },
-        { "name": "Subh Agrawal", "position": "Executive", "image": "/team/subh-agrawal.jpg" },
-        { "name": "Prashant", "position": "Executive", "image": "/team/Prashant.jpg" },
-        { "name": "Rahan Shivam", "position": "Executive", "image": "/team/Rahan Shivam.png" }
+        { "name": "Ruchirr Lodha", "position": "Executive", "image": "/team/Ruchirr Lodha.jpg" },
+        { "name": "Vaibhav Godara", "position": "Executive", "image": "/team/Vaibhav.jpeg" },
+        { "name": "Ronit Anuj Patil", "position": "Executive", "image": "/team/Ronit Patil.jpg" },
+        { "name": "Divya Bhardwaj", "position": "Executive", "image": "/team/Divya Bhardwaj.jpg" }
       ]
     },
     "outreachMarketing": {
       "coordinators": [
-        { "name": "Pranjal Updahyay", "position": "Coordinator", "image": "/team/pranjal-upadhyay.jpg" },
-        { "name": "Khushee Binwal", "position": "Coordinator", "image": "/team/khushee-binwal.jpg" }
+        { "name": "Priyanshu Tiwari", "position": "Coordinator", "image": "/team/Priyanshu Tiwari.png" },
+        { "name": "Biswadeep Borah", "position": "Coordinator", "image": "/team/Biswadeep Borah.jpeg" }
       ],
       "executives": [
-        { "name": "Gagan Maharana", "position": "Executive", "image": "/team/gagan-maharana.png" },
-        { "name": "Rudraa Tyagi", "position": "Executive", "image": "/team/rudraa-tyagi.jpg" },
-        { "name": "Poornima", "position": "Executive", "image": "/team/Poornima.jpg" },
-        { "name": "Utkarsh Teejwal", "position": "Executive", "image": "/team/Utkarsh Teejwal.jpg" }
+        { "name": "Hrishikesh Medhi", "position": "Executive", "image": "/team/Hrishikesh Medhi.jpg" },
+        { "name": "Saurabh Shekhar", "position": "Executive", "image": "/team/Saurabh Shekhar.jpg" },
+        { "name": "Swati Sharma", "position": "Executive", "image": "/team/Swati Sharma.png" },
+        { "name": "Mayank Barhate", "position": "Executive", "image": "/team/Mayank Barhate.png" }
       ]
     },
     "events": {
       "coordinators": [
-        { "name": "Anushka Bordoloi", "position": "Coordinator", "image": "/team/anushka-bordoloi.jpg" },
-        { "name": "Maahi", "position": "Coordinator", "image": "/team/maahi.jpg" }
+        { "name": "Gagan Maharana", "position": "Coordinator", "image": "/team/Maharana Gagan.png" },
+        { "name": "Aarush Gautam", "position": "Coordinator", "image": "/team/Aarush Gautam.jpeg" }
       ],
       "executives": [
-        { "name": "Rachit Gupta", "position": "Executive", "image": "/team/rachit-gupta.jpg" },
-        { "name": "Shubhankara Dash", "position": "Executive", "image": "/team/shubhankara-dash.jpeg" },
-        { "name": "Prerna Joshi", "position": "Executive", "image": "/team/Prerna Joshi.png" },
-        { "name": "Priyanshu Tiwari", "position": "Executive", "image": "/team/Priyanshu Tiwari.png" }
+        { "name": "Soham Nikhil Deshpande", "position": "Executive", "image": "/team/Soham Deshpande.jpeg" },
+        { "name": "Soham Vadulekar", "position": "Executive", "image": "/team/Soham Vadulekar.jpg" },
+        { "name": "Anjali Gupta", "position": "Executive", "image": "/team/Anjali Gupta.jpg" },
+        { "name": "Abhash Anand", "position": "Executive", "image": "/team/Abhash Anand.jpg" },
+        { "name": "Rigzen Wangmoo", "position": "Executive", "image": "/team/Rigzen Wangmoo.jpeg" },
+        { "name": "Yashvi Garg", "position": "Executive", "image": "/team/Yashvi Garg.jpg" }
       ]
     },
     "adminFinance": {
       "coordinators": [
-        { "name": "Amaan Ansari", "position": "Coordinator", "image": "/team/amaan-ansari.jpg" },
-        { "name": "Sarthak Garg", "position": "Coordinator", "image": "/team/sarthak-garg.jpg" }
+        { "name": "Anushree Goyal", "position": "Coordinator", "image": "/team/Anushree.jpeg" }
       ],
       "executives": [
-        { "name": "Anushree Goyal", "position": "Executive", "image": "/team/anushree-goyal.jpg" },
-        { "name": "Demira Vashisht", "position": "Executive", "image": "/team/demira-vashisht.jpg" }
+        { "name": "Kshitij Bokare", "position": "Executive", "image": "/team/Kshitij Bokare.jpeg" }
       ]
+    },
+    "technical": {
+      "coordinators": [
+        { "name": "Priya Shah", "position": "Coordinator", "image": "/team/Priya Shah.jpeg" }
+      ],
+      "executives": []
+    },
+    "caic": {
+      "coordinators": [
+        { "name": "Sonia Charaya", "position": "Coordinator", "image": "/team/Sonia Charaya.jpeg" }
+      ],
+      "executives": []
     }
   },
   "previousTeam": {
     "oc": [
       {
-        "name": "Harsh Kumar Singh",
+        "name": "Rhythm Shah",
         "position": "Overall Coordinator",
-        "image": "/team/Harsh.png"
+        "image": "/team/rhythm-shah.jpg"
       }
     ],
     "panelMembers": [
       {
-        "name": "Sumit Singh",
+        "name": "Shreyans Singh",
         "position": "Panel Member",
-        "image": "/team/Sumit.png"
+        "image": "/team/shreyans-singh.webp"
       },
       {
-        "name": "Parth Soni",
+        "name": "Divyansh Singh Narwaria",
         "position": "Panel Member",
-        "image": "/team/Parth.png"
+        "image": "/team/divyansh-singh-narwaria.webp"
       },
       {
-        "name": "Anuj Prasad",
+        "name": "Thakur abhay veer singh",
         "position": "Panel Member",
-        "image": "/team/Anuj.png"
+        "image": "/team/Thakurabhayveersingh.png"
       },
       {
-        "name": "Rhitika Singh",
+        "name": "Dhruv Jain",
         "position": "Panel Member",
-        "image": "/team/Rhitika.png"
+        "image": "/team/dhruv-jain.jpg"
       }
     ]
   }
