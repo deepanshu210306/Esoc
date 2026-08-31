@@ -84,7 +84,9 @@ const TeamPage = () => {
     designOps: "Design & Operations",
     outreachMarketing: "Outreach & Marketing",
     events: "Events",
-    adminFinance: "Admin & Finance"
+    adminFinance: "Admin & Finance",
+    technical: "Technical",
+    caic: "CAIC"
   };
 
   const overallCoordinator = teamData.panelMembers.find(
