@@ -8,23 +8,36 @@
     {
       "name": "Deepanshu",
       "position": "Overall Coordinator",
-      "image": "/team/Deepanshu.jpg"
+      "image": "/team/Deepanshu.png"
+    },
+    {
+      "name": "Dhruv Chourasia",
+      "position": "Panel Member",
+      "image": "/team/Dhruv.jpeg"
+    },
+    {
+      "name": "Maahi",
+      "position": "Panel Member",
+      "image": "/team/Maahi.jpeg"
+
+    },
+    {
+      "name": "Disha",
+      "position": "Panel Member",
+      "image": "/team/Disha.jpeg"
+
     },
     {
       "name": "Mitashi Jain",
       "position": "Panel Member",
       "image": "/team/Mitashi Jain.jpeg"
-    },
-    {
-      "name": "Dhruv Chourasia",
-      "position": "Panel Member",
-      "image": "/team/Dhruv Chourasia.jpg"
     }
+    
   ],
   "verticals": {
     "designOps": {
       "coordinators": [
-        { "name": "Sayantan Roy", "position": "Coordinator", "image": "/team/Sayantan Roy.jpg" },
+        { "name": "Sayantan Roy", "position": "Coordinator", "image": "/team/Sayantan.jpeg" },
         { "name": "Vedant Kumar", "position": "Coordinator", "image": "/team/Vedant Kumar.jpg" }
       ],
       "executives": [
@@ -73,13 +86,8 @@
         { "name": "Priya Shah", "position": "Coordinator", "image": "/team/Priya Shah.jpeg" }
       ],
       "executives": []
-    },
-    "caic": {
-      "coordinators": [
-        { "name": "Sonia Charaya", "position": "Coordinator", "image": "/team/Sonia Charaya.jpeg" }
-      ],
-      "executives": []
     }
+    
   },
   "previousTeam": {
     "oc": [

@@ -156,6 +156,9 @@ const ContactPage = () => {
                     rows="6"
                     required
                   />
+                  <p className="contact-form-note">
+                    Add your email and contact number at the end of your message
+                  </p>
                 </div>
               </div>
 
