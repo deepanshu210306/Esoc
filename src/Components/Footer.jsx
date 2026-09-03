@@ -29,7 +29,8 @@ const Footer = () => {
           <p className="footer-info">Room No. 235, Block-5</p>
           <p className="footer-info">Department of Energy Science and Engineering</p>
           <p className="footer-info">Indian Institute of Technology Delhi, Hauz Khas, New Delhi-110016</p>
-          <p className="footer-info">Phone: +91-83559 80737</p>
+          <p className="footer-info">Phone: +91-80786 03466</p>
+          <p className="footer-info">Email:  energysociety@iitd.ac.in</p>
         </div>
 
         {/* Right - Social Media Section */}
@@ -52,7 +53,7 @@ const Footer = () => {
       {/* Bottom Footer Line */}
       <div className="footer-bottom" >
         <p> Made with ❤️ by Deepanshu</p>
-        <p>© 2025 Energy Society, IIT Delhi. All Rights Reserved.</p>
+        <p>© 2026 Energy Society, IIT Delhi. All Rights Reserved.</p>
       </div>
     </footer>
   );
