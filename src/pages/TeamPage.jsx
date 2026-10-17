@@ -243,7 +243,7 @@ const TeamPage = () => {
       <section ref={sectionRefs.previousTeam} className="previous-team-section animate-section">
         <div className="container">
           <div className="previous-team-header">
-            <h2 className="section-title">Previous Team</h2>
+            <h2 className="section-title">Previous Teams</h2>
             <div className="toggle-container">
               <label className="toggle-switch">
                 <input
@@ -254,68 +254,100 @@ const TeamPage = () => {
                 <span className="toggle-slider"></span>
               </label>
               <span className="toggle-label">
-                {showPreviousTeam ? 'Hide' : 'Show'} Previous Team
+                {showPreviousTeam ? 'Hide' : 'Show'} Previous Teams
               </span>
             </div>
           </div>
 
-          {teamData?.previousTeam && (
-            <div className={`previous-team-content ${showPreviousTeam ? 'visible' : 'hidden'}`}>
-              {teamData.previousTeam.oc && teamData.previousTeam.oc.length > 0 && (
-                <div className="core-subsection">
-                  <h3 className="core-subtitle">Overall Coordinator</h3>
-                  <div className="panel-grid core-oc-grid">
-                    {teamData.previousTeam.oc.map((member, index) => (
-                      <div className="team-card panel-card" key={`prev-oc-${index}`}>
-                        <div className="member-image">
-                          <img 
-                            src={member.image} 
-                            alt={member.name} 
-                            loading="eager"
-                            decoding="async"
-                          />
-                          <div className="image-overlay"></div>
-                        </div>
-                        <div className="member-info">
-                          <h3>{member.name}</h3>
-                          <p className="member-position">{member.position}</p>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
+         
+{teamData?.previousTeams && (
+  <div
+    className={`previous-team-content ${
+      showPreviousTeam ? "visible" : "hidden"
+    }`}
+  >
+    {teamData.previousTeams.map((team, teamIndex) => (
+      <div
+        key={team.year || teamIndex}
+        className="previous-team-group"
+      >
+  
+        <h2 className="section-title">
+          {team.year}
+        </h2>
 
-              {teamData.previousTeam.panelMembers && teamData.previousTeam.panelMembers.length > 0 && (
-                <div className="core-subsection">
-                  <h3 className="core-subtitle">Panel Members</h3>
-                  <div className="panel-grid">
-                    {teamData.previousTeam.panelMembers.map((member, index) => (
-                      <div className="team-card panel-card" key={`prev-panel-${index}`}>
-                        <div className="member-image">
-                          <img 
-                            src={member.image} 
-                            alt={member.name} 
-                            loading="eager"
-                            decoding="async"
-                          />
-                          <div className="image-overlay"></div>
-                        </div>
-                        <div className="member-info">
-                          <h3>{member.name}</h3>
-                          <p className="member-position">{member.position}</p>
-                        </div>
-                      </div>
-                    ))}
+        {team.oc?.length > 0 && (
+          <div className="core-subsection">
+            <h3 className="core-subtitle">
+              Overall Coordinator
+            </h3>
+
+            <div className="panel-grid core-oc-grid">
+              {team.oc.map((member, index) => (
+                <div
+                  className="team-card panel-card"
+                  key={`oc-${teamIndex}-${index}`}
+                >
+                  <div className="member-image">
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      loading="lazy"
+                    />
+                    <div className="image-overlay"></div>
+                  </div>
+
+                  <div className="member-info">
+                    <h3>{member.name}</h3>
+                    <p className="member-position">
+                      {member.position}
+                    </p>
                   </div>
                 </div>
-              )}
+              ))}
             </div>
-          )}
-        </div>
-      </section>
-    </div>
-  );
-};
+          </div>
+        )}
 
+        {team.panelMembers?.length > 0 && (
+          <div className="core-subsection">
+            <h3 className="core-subtitle">
+              Panel Members
+            </h3>
+
+            <div className="panel-grid">
+              {team.panelMembers.map((member, index) => (
+                <div
+                  className="team-card panel-card"
+                  key={`panel-${teamIndex}-${index}`}
+                >
+                  <div className="member-image">
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      loading="lazy"
+                    />
+                    <div className="image-overlay"></div>
+                  </div>
+
+                  <div className="member-info">
+                    <h3>{member.name}</h3>
+                    <p className="member-position">
+                      {member.position}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
+    ))}
+  </div>
+)}
+          </div>
+        </section>
+      </div>
+       );
+};
 export default TeamPage;
