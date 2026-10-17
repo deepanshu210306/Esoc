@@ -165,6 +165,12 @@ const AboutPage = () => {
                   <p>Prof. Kaushik Saha</p>
                 </div>
               </div>
+               <div className="timeline-item">
+                <div className="timeline-dot"></div>
+                <div className="timeline-content">
+                  <p>Prof. Arihant Bhandari</p>
+                </div>
+              </div>
 
             </div>
           </div>

@@ -1,8 +1,8 @@
 {
   "facultyCoordinator": {
-    "name": "Prof. Kaushik Saha",
+    "name": "Prof. Arihant Bhandari",
     "position": "Faculty Coordinator",
-    "image": "/team/kaushik-saha.png"
+    "image": "/team/arihant-bhandari.jpeg"
   },
   "panelMembers": [
     {
@@ -85,7 +85,9 @@
       "coordinators": [
         { "name": "Priya Shah", "position": "Coordinator", "image": "/team/Priya Shah.jpeg" }
       ],
-      "executives": []
+      "executives": [
+        { "name": "Shivanchal Sharma", "position": "Executive", "image": "/team/Shivanchal Sharma.jpeg" }
+      ]
     }
     
   },
