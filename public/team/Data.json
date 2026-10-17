@@ -91,7 +91,9 @@
     }
     
   },
-  "previousTeam": {
+  "previousTeams": [
+    {
+    "year": "2025–26",
     "oc": [
       {
         "name": "Rhythm Shah",
@@ -121,5 +123,38 @@
         "image": "/team/dhruv-jain.jpg"
       }
     ]
+  },
+  {
+    "year": "2024–25",
+    "oc": [
+      {
+        "name": "Harsh Kumar Singh",
+        "position": "Overall Coordinator",
+        "image": "/team/Harsh.png"
+      }
+    ],
+    "panelMembers": [
+     {
+        "name": "Anuj",
+        "position": "Panel Member",
+        "image": "/team/Anuj.png"
+      },
+      {
+        "name": "Parth Soni",
+        "position": "Panel Member",
+        "image": "/team/Parth.png"
+      },
+      {
+        "name": "Rhitika",
+        "position": "Panel Member",
+        "image": "/team/Rhitika.png"
+      },
+      {
+        "name": "Sumit",
+        "position": "Panel Member",
+        "image": "/team/Sumit.png"
+      }
+    ]
   }
+]
 }
